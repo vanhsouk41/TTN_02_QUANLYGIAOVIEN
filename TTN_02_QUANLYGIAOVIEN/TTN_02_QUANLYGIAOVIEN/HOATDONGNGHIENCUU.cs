@@ -17,7 +17,29 @@ namespace QUAN_LY_GIAO_VIEN
         DataSet myDataSet = new DataSet();
         public DataTable myDisplayDataTable = new DataTable();
 
-                public void tainghiencuukhoahoc(string type1, string type, string value, string namhoc)
+        public HOATDONGNGHIENCUU()
+        {
+            conn = new SqlConnection(connString);
+        }
+        public void lylichkhoahoc(string type1, string type2, string value2)
+        {
+            SqlCommand NCKH = conn.CreateCommand();
+            NCKH.CommandText = "SELECT * FROM hoatdongNCKH(@type1, @type2, @value2)";
+            NCKH.Parameters.Add(new SqlParameter("@type1", SqlDbType.NVarChar)).Value = type1;
+            NCKH.Parameters.Add(new SqlParameter("@type2", SqlDbType.NVarChar)).Value = type2;
+            NCKH.Parameters.Add(new SqlParameter("@value2", SqlDbType.NVarChar)).Value = value2;
+            sda.SelectCommand = NCKH;
+
+            conn.Open();
+            myDataSet = new DataSet();
+            sda.Fill(myDataSet);
+            conn.Close();
+            myDataSet.Tables[0].TableName = "DISPLAY";
+            myDisplayDataTable = new DataTable();
+            myDisplayDataTable = myDataSet.Tables["DISPLAY"];
+        }
+
+        public void tainghiencuukhoahoc(string type1, string type, string value, string namhoc)
         {
             SqlCommand taiNCKH = conn.CreateCommand();
             if (type1 == "Bài báo khoa h?c")
