@@ -29,7 +29,83 @@ namespace QUAN_LY_GIAO_VIEN
             trangchu.Show();
         }
 
-                private void button7_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
+        {
+            DialogResult dr = MessageBox.Show("B?n th?c s? mu?n thoát?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dr == DialogResult.Yes)
+            {
+                Environment.Exit(0);
+            }
+
+        }
+
+        private void Data_form_Load(object sender, EventArgs e)
+        {
+            HOATDONGNGHIENCUU hdnc = new HOATDONGNGHIENCUU();
+            hdnc.load_BBKH();
+            dataGridView1.DataSource = hdnc.myDisplayDataTable;
+            dataGridView1.AutoResizeColumns();
+        }
+
+        private void tabPage9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+        private void QL_dulieu_selected(object sender, EventArgs e)
+        {
+            if (QL_dulieu.SelectedIndex == 0)
+            {
+                HOATDONGNGHIENCUU hdnc = new HOATDONGNGHIENCUU();
+                hdnc.load_BBKH();
+                dataGridView1.DataSource = hdnc.myDisplayDataTable;
+                dataGridView1.AutoResizeColumns();
+            }
+
+            ///PHÁT VI?T
+            if (QL_dulieu.SelectedIndex == 1)
+            {
+                load_data_LHP();
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            HOATDONGNGHIENCUU hdnc = new HOATDONGNGHIENCUU();
+            button3.Enabled = true;
+            button5.Enabled = false;
+            button6.Enabled = false;
+            button7.Enabled = true;
+            button8.Enabled = true;
+            textBox5.Text = hdnc.AutoGenerateMaBBKH();
+            textBox5.Enabled = false;
+            textBox6.Text = "";
+            textBox12.Text = "";
+            textBox13.Text = "";
+            textBox6.Enabled = true;
+            comboBox2.Enabled = true;
+            dateTimePicker1.Enabled = true;
+            textBox13.Enabled = true;
+            textBox12.Enabled = true;
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            button3.Enabled = false;
+            button5.Enabled = true;
+            button6.Enabled = false;
+            button7.Enabled = true;
+            button8.Enabled = true;
+            textBox5.ReadOnly = true;
+            textBox6.Enabled = true;
+            comboBox2.Enabled = true;
+            dateTimePicker1.Enabled = true;
+            textBox13.Enabled = true;
+            textBox12.Enabled = true;
+        }
+
+        private void button7_Click(object sender, EventArgs e)
         {
             HOATDONGNGHIENCUU hdnc = new HOATDONGNGHIENCUU();
             string MaBB = textBox5.Text;
