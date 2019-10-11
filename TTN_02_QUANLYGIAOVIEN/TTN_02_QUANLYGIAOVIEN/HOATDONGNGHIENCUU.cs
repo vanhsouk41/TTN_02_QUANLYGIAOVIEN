@@ -23,13 +23,7 @@ namespace QUAN_LY_GIAO_VIEN
         }
         public void lylichkhoahoc(string type1, string type2, string value2)
         {
-            SqlCommand NCKH = conn.CreateCommand();
-            NCKH.CommandText = "SELECT * FROM hoatdongNCKH(@type1, @type2, @value2)";
-            NCKH.Parameters.Add(new SqlParameter("@type1", SqlDbType.NVarChar)).Value = type1;
-            NCKH.Parameters.Add(new SqlParameter("@type2", SqlDbType.NVarChar)).Value = type2;
-            NCKH.Parameters.Add(new SqlParameter("@value2", SqlDbType.NVarChar)).Value = value2;
-            sda.SelectCommand = NCKH;
-
+          
             conn.Open();
             myDataSet = new DataSet();
             sda.Fill(myDataSet);
