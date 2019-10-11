@@ -8,13 +8,27 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace TTN_02_QUANLYGIAOVIEN
+namespace QUAN_LY_GIAO_VIEN
 {
     public partial class Form1 : Form
     {
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Data_form fm_dt = new Data_form();
+            fm_dt.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Works_calculating w_c = new Works_calculating();
+            w_c.Show();
         }
     }
 }

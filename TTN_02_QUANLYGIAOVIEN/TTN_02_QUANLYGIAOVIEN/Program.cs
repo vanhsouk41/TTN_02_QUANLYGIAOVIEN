@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace TTN_02_QUANLYGIAOVIEN
+namespace QUAN_LY_GIAO_VIEN
 {
     static class Program
     {
