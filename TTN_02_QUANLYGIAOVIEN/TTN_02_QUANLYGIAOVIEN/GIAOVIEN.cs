@@ -19,6 +19,41 @@ namespace QUAN_LY_GIAO_VIEN
         private string mahocham;
         private string mahocvi;
         public GIAOVIEN() { }
-           
+
+
+        // hàm này được sử dụng để khởi tạo các thuộc tính cho giáo viên!
+        // hàm này được sử dụng để khởi tạo các thuộc tính cho giáo viên!
+        // hàm này được sử dụng để khởi tạo các thuộc tính cho giáo viên!
+        // hàm này được sử dụng để khởi tạo các thuộc tính cho giáo viên!
+        // hàm này được sử dụng để khởi tạo các thuộc tính cho giáo viên!
+        // hàm này được sử dụng để khởi tạo các thuộc tính cho giáo viên!
+        // hàm này được sử dụng để khởi tạo các thuộc tính cho giáo viên!
+        // hàm này được sử dụng để khởi tạo các thuộc tính cho giáo viên!
+        // hàm này được sử dụng để khởi tạo các thuộc tính cho giáo viên!
+        // hàm này được sử dụng để khởi tạo các thuộc tính cho giáo viên!
+        // hàm này được sử dụng để khởi tạo các thuộc tính cho giáo viên!
+        // hàm này được sử dụng để khởi tạo các thuộc tính cho giáo viên!
+        // hàm này được sử dụng để khởi tạo các thuộc tính cho giáo viên!
+        // hàm này được sử dụng để khởi tạo các thuộc tính cho giáo viên!
+        // hàm này được sử dụng để khởi tạo các thuộc tính cho giáo viên!
+        // hàm này được sử dụng để khởi tạo các thuộc tính cho giáo viên!
+
+        // hàm này được sử dụng để khởi tạo các thuộc tính cho giáo viên!
+        // hàm này được sử dụng để khởi tạo các thuộc tính cho giáo viên!
+        // hàm này được sử dụng để khởi tạo các thuộc tính cho giáo viên!
+        // hàm này được sử dụng để khởi tạo các thuộc tính cho giáo viên!
+        // hàm này được sử dụng để khởi tạo các thuộc tính cho giáo viên!
+        // hàm này được sử dụng để khởi tạo các thuộc tính cho giáo viên!
+        // hàm này được sử dụng để khởi tạo các thuộc tính cho giáo viên!
+        // hàm này được sử dụng để khởi tạo các thuộc tính cho giáo viên!
+        // hàm này được sử dụng để khởi tạo các thuộc tính cho giáo viên!
+        // hàm này được sử dụng để khởi tạo các thuộc tính cho giáo viên!
+        // hàm này được sử dụng để khởi tạo các thuộc tính cho giáo viên!
+        // hàm này được sử dụng để khởi tạo các thuộc tính cho giáo viên!
+        // hàm này được sử dụng để khởi tạo các thuộc tính cho giáo viên!
+        // hàm này được sử dụng để khởi tạo các thuộc tính cho giáo viên!
+        // hàm này được sử dụng để khởi tạo các thuộc tính cho giáo viên!
+        // hàm này được sử dụng để khởi tạo các thuộc tính cho giáo viên!
+
     }
 }
