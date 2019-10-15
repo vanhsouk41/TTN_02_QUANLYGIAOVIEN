@@ -29,7 +29,61 @@ namespace QUAN_LY_GIAO_VIEN
             
         }
 
-                private void button5_Click(object sender, EventArgs e)
+        private void Works_calculating_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //string type1 = comboBox2.GetItemText(comboBox2.SelectedItem);
+            //string type2 = comboBox1.GetItemText(comboBox1.SelectedItem);
+            //string value2 = textBox6.Text;
+
+            string type1 = comboBox2.Text;
+            string type2 = comboBox1.Text;
+            string value2 = textBox6.Text;
+
+            HDNC.lylichkhoahoc(type1, type2, value2);
+            dataGridView1.DataSource = HDNC.myDisplayDataTable;
+            dataGridView1.AutoResizeColumns();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string type = comboBox3.Text;
+            string value = textBox10.Text;
+            string namhoc = textBox7.Text;
+            DataTable dt1, dt2, dt3 = new DataTable();
+            HDNC.tainghiencuukhoahoc("Bài báo khoa h?c", type, value, namhoc);
+            dt1 = HDNC.myDisplayDataTable;
+            HDNC.tainghiencuukhoahoc("?? tài nghiên c?u", type, value, namhoc);
+            dt2 = HDNC.myDisplayDataTable;
+            HDNC.tainghiencuukhoahoc("Sách", type, value, namhoc);
+            dt3 = HDNC.myDisplayDataTable;
+            dt2.Merge(dt3);
+            dt1.Merge(dt2);
+            dataGridView2.DataSource = dt1;
+            dataGridView2.AutoResizeColumns();
+            float tongtai = 0;
+            for (int i = 0; i < dataGridView2.RowCount; i++)
+            {
+                tongtai += float.Parse(dataGridView2.Rows[i].Cells["GioChuan"].Value.ToString());
+            }
+            textBox12.Text = tongtai.ToString();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Export.ExportFile("HO?T ??NG NGHIÊN C?U KHOA H?C", dataGridView1);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Export.ExportFile("T?I NGHIÊN C?U KHOA H?C", dataGridView2);
+        }
+
+        private void button5_Click(object sender, EventArgs e)
         {
             this.Hide();
             Form1 trangchu = new Form1();
