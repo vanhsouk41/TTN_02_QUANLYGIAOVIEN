@@ -30,5 +30,28 @@ namespace QUAN_LY_GIAO_VIEN
             Works_calculating w_c = new Works_calculating();
             w_c.Show();
         }
+
+
+        private void button100_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Works_calculating w_c = new Works_calculating();
+            w_c.Show();
+        }
+
+        private void button10000_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Works_calculating w_c = new Works_calculating();
+            w_c.Show();
+        }
+
+
+        private void button000001_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Works_calculating w_c = new Works_calculating();
+            w_c.Show();
+        }
     }
 }
