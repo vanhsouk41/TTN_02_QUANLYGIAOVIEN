@@ -109,17 +109,7 @@ namespace QUAN_LY_GIAO_VIEN
         public void Insert_BBKH(string MaBB, string TenBB, string LoaiBB, DateTime NgayDang, string TapChi, string Soluongtacgia)
         {
             SqlCommand insert = conn.CreateCommand();
-            insert.CommandText = "Insert_BBKH";
-            insert.CommandType = CommandType.StoredProcedure;
-            insert.Parameters.Add(new SqlParameter("@MaBB", SqlDbType.Char)).Value = MaBB;
-            insert.Parameters.Add(new SqlParameter("@TenBB", SqlDbType.NVarChar)).Value = TenBB;
-            insert.Parameters.Add(new SqlParameter("@LoaiBB", SqlDbType.NVarChar)).Value = LoaiBB;
-            insert.Parameters.Add(new SqlParameter("@NgayDang", SqlDbType.Date)).Value = NgayDang.Date;
-            insert.Parameters.Add(new SqlParameter("@TapChi", SqlDbType.NVarChar)).Value = TapChi;
-            insert.Parameters.Add(new SqlParameter("@Soluongtacgia", SqlDbType.Int)).Value = int.Parse(Soluongtacgia);
-            sda.SelectCommand = insert;
-            conn.Open();
-            insert.ExecuteNonQuery();
+          
             conn.Close();
         }
         public void Update_BBKH (string MaBB, string TenBB, string LoaiBB, DateTime NgayDang, string TapChi, string Soluongtacgia)
