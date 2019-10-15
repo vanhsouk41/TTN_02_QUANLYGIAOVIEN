@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -29,61 +29,7 @@ namespace QUAN_LY_GIAO_VIEN
             
         }
 
-        private void Works_calculating_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            //string type1 = comboBox2.GetItemText(comboBox2.SelectedItem);
-            //string type2 = comboBox1.GetItemText(comboBox1.SelectedItem);
-            //string value2 = textBox6.Text;
-
-            string type1 = comboBox2.Text;
-            string type2 = comboBox1.Text;
-            string value2 = textBox6.Text;
-
-            HDNC.lylichkhoahoc(type1, type2, value2);
-            dataGridView1.DataSource = HDNC.myDisplayDataTable;
-            dataGridView1.AutoResizeColumns();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            string type = comboBox3.Text;
-            string value = textBox10.Text;
-            string namhoc = textBox7.Text;
-            DataTable dt1, dt2, dt3 = new DataTable();
-            HDNC.tainghiencuukhoahoc("Bài báo khoa học", type, value, namhoc);
-            dt1 = HDNC.myDisplayDataTable;
-            HDNC.tainghiencuukhoahoc("Đề tài nghiên cứu", type, value, namhoc);
-            dt2 = HDNC.myDisplayDataTable;
-            HDNC.tainghiencuukhoahoc("Sách", type, value, namhoc);
-            dt3 = HDNC.myDisplayDataTable;
-            dt2.Merge(dt3);
-            dt1.Merge(dt2);
-            dataGridView2.DataSource = dt1;
-            dataGridView2.AutoResizeColumns();
-            float tongtai = 0;
-            for (int i = 0; i < dataGridView2.RowCount; i++)
-            {
-                tongtai += float.Parse(dataGridView2.Rows[i].Cells["GioChuan"].Value.ToString());
-            }
-            textBox12.Text = tongtai.ToString();
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            Export.ExportFile("HOẠT ĐỘNG NGHIÊN CỨU KHOA HỌC", dataGridView1);
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            Export.ExportFile("TẢI NGHIÊN CỨU KHOA HỌC", dataGridView2);
-        }
-
-        private void button5_Click(object sender, EventArgs e)
+                private void button5_Click(object sender, EventArgs e)
         {
             this.Hide();
             Form1 trangchu = new Form1();
@@ -92,13 +38,13 @@ namespace QUAN_LY_GIAO_VIEN
 
         private void button6_Click(object sender, EventArgs e)
         {
-            DialogResult dr = MessageBox.Show("Bạn thực sự muốn thoát?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult dr = MessageBox.Show("B?n th?c s? mu?n tho�t?", "Th�ng b�o", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dr == DialogResult.Yes)
             {
                 Environment.Exit(0);
             }
         }
-        ///Phát viết
+        ///Ph�t vi?t
         private void button7_Click(object sender, EventArgs e)
         {
             string query = "SELECT * FROM dbo.thong_ke_giang_day(@thongketheo, @key,@NamHoc)";
@@ -123,15 +69,15 @@ namespace QUAN_LY_GIAO_VIEN
             dataGridView3.DataSource = myDataSet.Tables[0];
             dataGridView3.AutoResizeColumns();
         }
-        // ///Phát viết
+        // ///Ph�t vi?t
         private void button8_Click(object sender, EventArgs e)
         {
 
             string chon = comboBox6.Text;
             panel1.Visible = false;
-            if (chon == "Giáo viên")
+            if (chon == "Gi�o vi�n")
             {
-                string query = "SELECT magv AS 'Mã GV',tengv AS 'Họ tên',thuctai AS 'Thực tải',taiyeucau AS 'Tải yêu cầu' FROM dbo.tai_giang_day (@Namhoc)";
+                string query = "SELECT magv AS 'M� GV',tengv AS 'H? t�n',thuctai AS 'Th?c t?i',taiyeucau AS 'T?i y�u c?u' FROM dbo.tai_giang_day (@Namhoc)";
 
                 SqlDataAdapter sda = new SqlDataAdapter();
                 DataSet myDataSet = new DataSet();
@@ -151,9 +97,9 @@ namespace QUAN_LY_GIAO_VIEN
                 dataGridView4.DataSource = myDataSet.Tables[0];
                 dataGridView4.AutoResizeColumns();
             }
-            if (chon == "Bộ môn")
+            if (chon == "B? m�n")
             {
-                string query = "EXEC tai_theo_khoa_or_bomon  @chon=N'bộ môn',@namhoc=@nh";
+                string query = "EXEC tai_theo_khoa_or_bomon  @chon=N'b? m�n',@namhoc=@nh";
 
                 SqlDataAdapter sda = new SqlDataAdapter();
                 DataSet myDataSet = new DataSet();
@@ -197,20 +143,20 @@ namespace QUAN_LY_GIAO_VIEN
                 dataGridView4.AutoResizeColumns();
             }
         }
-        ///Phát viết
+        ///Ph�t vi?t
         private void dataGridView4_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             string chon = comboBox6.Text;
-            if (chon == "Giáo viên")
+            if (chon == "Gi�o vi�n")
             {
-                string query = "SELECT MaGV AS 'Mã GV', HoTen AS 'Họ tên',Monhoc AS 'Lớp học phần', Siso AS 'Sĩ số',Loaihinhdaotao AS 'Loại hình Đào tạo', Sotiet AS 'Số tiết', GioChuan as 'Giờ chuẩn'FROM dbo.taiGiangday('Mã giáo viên', @magv,@namhoc)";
-                string magv = (dataGridView4.SelectedCells[0].OwningRow.Cells["Mã GV"].Value.ToString());
-                string tengv = (dataGridView4.SelectedCells[0].OwningRow.Cells["Họ tên"].Value.ToString());
+                string query = "SELECT MaGV AS 'M� GV', HoTen AS 'H? t�n',Monhoc AS 'L?p h?c ph?n', Siso AS 'S? s?',Loaihinhdaotao AS 'Lo?i h�nh ?�o t?o', Sotiet AS 'S? ti?t', GioChuan as 'Gi? chu?n'FROM dbo.taiGiangday('M� gi�o vi�n', @magv,@namhoc)";
+                string magv = (dataGridView4.SelectedCells[0].OwningRow.Cells["M� GV"].Value.ToString());
+                string tengv = (dataGridView4.SelectedCells[0].OwningRow.Cells["H? t�n"].Value.ToString());
                 string namhoc = comboBox7.Text;
                 SqlDataAdapter sda = new SqlDataAdapter();
                 DataSet myDataSet = new DataSet();
-                label6.Text = "Mã GV :";
-                label7.Text = "Họ tên:";
+                label6.Text = "M� GV :";
+                label7.Text = "H? t�n:";
                 label8.Text = magv;
                 label9.Text = tengv;
                 panel1.Visible = true;
@@ -230,16 +176,16 @@ namespace QUAN_LY_GIAO_VIEN
                 dataGridView4.AutoResizeColumns();
 
             }
-            if (chon == "Bộ môn")
+            if (chon == "B? m�n")
             {
-                string query = "SELECT temp.magv AS 'Mã GV',tengv AS 'Họ tên',thuctai AS 'Thực tải',taiyeucau AS 'Tải yêu cầu' FROM(SELECT * FROM dbo.tai_giang_day(@namhoc))AS temp JOIN dbo.GV_DV ON GV_DV.MaGV = temp.magv WHERE MaDV = @mabomon";
-                string mabm = (dataGridView4.SelectedCells[0].OwningRow.Cells["Mã bộ môn"].Value.ToString());
-                string tenbm = (dataGridView4.SelectedCells[0].OwningRow.Cells["Tên bộ môn"].Value.ToString());
+                string query = "SELECT temp.magv AS 'M� GV',tengv AS 'H? t�n',thuctai AS 'Th?c t?i',taiyeucau AS 'T?i y�u c?u' FROM(SELECT * FROM dbo.tai_giang_day(@namhoc))AS temp JOIN dbo.GV_DV ON GV_DV.MaGV = temp.magv WHERE MaDV = @mabomon";
+                string mabm = (dataGridView4.SelectedCells[0].OwningRow.Cells["M� b? m�n"].Value.ToString());
+                string tenbm = (dataGridView4.SelectedCells[0].OwningRow.Cells["T�n b? m�n"].Value.ToString());
                 string namhoc = comboBox7.Text;
                 SqlDataAdapter sda = new SqlDataAdapter();
                 DataSet myDataSet = new DataSet();
-                label6.Text = "Mã bộ môn :";
-                label7.Text = "Tên bộ môn:";
+                label6.Text = "M� b? m�n :";
+                label7.Text = "T�n b? m�n:";
                 label8.Text = mabm;
                 label9.Text = tenbm;
                 panel1.Visible = true;
@@ -260,14 +206,14 @@ namespace QUAN_LY_GIAO_VIEN
             }
             if (chon == "Khoa")
             {
-                string query = "SELECT temp1.MaGV AS 'Mã GV',tengv AS 'Họ tên',thuctai AS 'Thực tải',taiyeucau AS 'Tải yêu cầu'  FROM  (SELECT MaGV FROM dbo.GV_DV join(SELECT * FROM dbo.DONVI WHERE MaDVC=@makhoa) AS temp ON temp.MaDV = GV_DV.MaDV) AS temp1 JOIN (SELECT * FROM dbo.tai_giang_day (@namhoc))AS temp2 ON temp2.magv = temp1.MaGV";
-                string makhoa = (dataGridView4.SelectedCells[0].OwningRow.Cells["Mã khoa"].Value.ToString());
-                string tenbm = (dataGridView4.SelectedCells[0].OwningRow.Cells["Tên khoa"].Value.ToString());
+                string query = "SELECT temp1.MaGV AS 'M� GV',tengv AS 'H? t�n',thuctai AS 'Th?c t?i',taiyeucau AS 'T?i y�u c?u'  FROM  (SELECT MaGV FROM dbo.GV_DV join(SELECT * FROM dbo.DONVI WHERE MaDVC=@makhoa) AS temp ON temp.MaDV = GV_DV.MaDV) AS temp1 JOIN (SELECT * FROM dbo.tai_giang_day (@namhoc))AS temp2 ON temp2.magv = temp1.MaGV";
+                string makhoa = (dataGridView4.SelectedCells[0].OwningRow.Cells["M� khoa"].Value.ToString());
+                string tenbm = (dataGridView4.SelectedCells[0].OwningRow.Cells["T�n khoa"].Value.ToString());
                 string namhoc = comboBox7.Text;
                 SqlDataAdapter sda = new SqlDataAdapter();
                 DataSet myDataSet = new DataSet();
-                label6.Text = "Mã khoa :";
-                label7.Text = "Tên khoa:";
+                label6.Text = "M� khoa :";
+                label7.Text = "T�n khoa:";
                 label8.Text = makhoa;
                 label9.Text = tenbm;
                 panel1.Visible = true;
@@ -287,16 +233,16 @@ namespace QUAN_LY_GIAO_VIEN
                 dataGridView4.AutoResizeColumns();
             }
         }
-        ///Phát viết
+        ///Ph�t vi?t
         private void button9_Click(object sender, EventArgs e)
         {
             panel1.Visible = false;
             this.button8_Click(sender, e);
         }
-        ///Phát viết
+        ///Ph�t vi?t
         private void button10_Click(object sender, EventArgs e)
         {
-            string query = "SELECT [_tenkhoa] AS 'Tên khoa', [_tongqs] AS 'Tổng QS',[_sogiaosu] AS 'Giáo sư',[_sophogiaosu] AS 'Phó giáo sư',[_sotiensi] AS 'Tiến sĩ',[_sothacsi] AS 'Thạc sĩ',[_sodaihoc] AS 'Đại học',[_tongCD] AS 'Tống sô chức danh',[_socaocap] AS 'Cao cấp',[_sogiangvienchinh] AS 'Chính', [_sokhoidau] AS 'Khởi đầu' FROM dbo.thongke_nhan_luc(@ngay)";
+            string query = "SELECT [_tenkhoa] AS 'T�n khoa', [_tongqs] AS 'T?ng QS',[_sogiaosu] AS 'Gi�o s?',[_sophogiaosu] AS 'Ph� gi�o s?',[_sotiensi] AS 'Ti?n s?',[_sothacsi] AS 'Th?c s?',[_sodaihoc] AS '??i h?c',[_tongCD] AS 'T?ng s� ch?c danh',[_socaocap] AS 'Cao c?p',[_sogiangvienchinh] AS 'Ch�nh', [_sokhoidau] AS 'Kh?i ??u' FROM dbo.thongke_nhan_luc(@ngay)";
             SqlDataAdapter sda = new SqlDataAdapter();
             DataSet myDataSet = new DataSet();
             DateTime ngay = dateTimePicker1.Value;
@@ -318,33 +264,33 @@ namespace QUAN_LY_GIAO_VIEN
 
         private void button11_phat_Click(object sender, EventArgs e)
         {
-            Export.ExportFile("HOẠT ĐỘNG GIẢNG DẠY", dataGridView3);
+            Export.ExportFile("HO?T ??NG GI?NG D?Y", dataGridView3);
         }
 
         private void button12_phat_Click(object sender, EventArgs e)
         {
             string chon = comboBox6.Text;
-            if (chon == "Giáo viên")
-                Export.ExportFile("TẢI GIÁO VIÊN", dataGridView4);
-            if (chon == "Bộ môn")
-                Export.ExportFile("TẢI BỘ MÔN", dataGridView4);
+            if (chon == "Gi�o vi�n")
+                Export.ExportFile("T?I GI�O VI�N", dataGridView4);
+            if (chon == "B? m�n")
+                Export.ExportFile("T?I B? M�N", dataGridView4);
             if (chon == "Khoa")
-                Export.ExportFile("TẢI KHOA", dataGridView4);
+                Export.ExportFile("T?I KHOA", dataGridView4);
 
         }
 
         private void button13_phat_Click(object sender, EventArgs e)
         {
-            Export.ExportFile("THỐNG KÊ NHÂN LỰC", dataGridView5);
+            Export.ExportFile("TH?NG K� NH�N L?C", dataGridView5);
         }
 
-        /// Thủy viết
-        /// phần thống kê khảo thí
+        /// Th?y vi?t
+        /// ph?n th?ng k� kh?o th�
         private void btThongKe_KT_Click(object sender, EventArgs e)
         {
             LienKetCSDL.OpenConnection();
 
-            if (cbBoxNoiDung_KT.Text == "Mã giáo viên")
+            if (cbBoxNoiDung_KT.Text == "M� gi�o vi�n")
             {
                 dataGridKhaoThi.DataSource = LienKetCSDL.getDataTable("select * from dbo.Func_GV_KhaoThi ('" + tbTuKhoa_KT.Text + "', '" + tbNamHoc_KT.Text + "')");
 
@@ -362,14 +308,14 @@ namespace QUAN_LY_GIAO_VIEN
         // in ra Excel 
         private void btInExcel_KT_Click(object sender, EventArgs e)
         {
-            Export.ExportFile("CÔNG TÁC KHẢO THÍ", dataGridKhaoThi);
+            Export.ExportFile("C�NG T�C KH?O TH�", dataGridKhaoThi);
         }
-        /// phần thống kê hội đồng
+        /// ph?n th?ng k� h?i ??ng
         private void btThongKe_HD_Click(object sender, EventArgs e)
         {
             LienKetCSDL.OpenConnection();
 
-            if (cbBoxNoiDung_HD.Text == "Mã giáo viên")
+            if (cbBoxNoiDung_HD.Text == "M� gi�o vi�n")
             {
                 dataGridHoiDong.DataSource = LienKetCSDL.getDataTable("select * from dbo.Func_GV_HoiDong ('" + tbTuKhoa_HD.Text + "', '" + tbNamHoc_HD.Text + "')");
 
@@ -387,15 +333,15 @@ namespace QUAN_LY_GIAO_VIEN
         // in ra Excel 
         private void btInExcel_HD_Click(object sender, EventArgs e)
         {
-            Export.ExportFile("THAM GIA CÁC HỘI ĐỒNG", dataGridHoiDong);
+            Export.ExportFile("THAM GIA C�C H?I ??NG", dataGridHoiDong);
         }
 
-        /// phần hướng dẫn đồ án
+        /// ph?n h??ng d?n ?? �n
         private void btThongKe_DA_Click(object sender, EventArgs e)
         {
             LienKetCSDL.OpenConnection();
 
-            if (cbBoxNoiDung_DA.Text == "Mã giáo viên")
+            if (cbBoxNoiDung_DA.Text == "M� gi�o vi�n")
             {
                 dataGridDoAn.DataSource = LienKetCSDL.getDataTable("select * from dbo.Func_GV_DoAn ('" + tbTuKhoa_DA.Text + "', '" + tbNamHoc_DA.Text + "')");
 
@@ -404,7 +350,7 @@ namespace QUAN_LY_GIAO_VIEN
                 tbTongTai_DA.Text = sum.Rows[0]["tong"].ToString();
             }
 
-            else if (cbBoxNoiDung_DA.Text == "Tên giáo viên")
+            else if (cbBoxNoiDung_DA.Text == "T�n gi�o vi�n")
             {
                 dataGridDoAn.DataSource = LienKetCSDL.getDataTable("select * from dbo.Func_DoAn_TenGV (N'" + tbTuKhoa_DA.Text + "', '" + tbNamHoc_DA.Text + "')");
 
@@ -414,26 +360,26 @@ namespace QUAN_LY_GIAO_VIEN
         // in ra Excel 
         private void btInExcel_DA_Click(object sender, EventArgs e)
         {
-            Export.ExportFile("HƯỚNG DẪN ĐỒ ÁN", dataGridDoAn);
+            Export.ExportFile("H??NG D?N ?? �N", dataGridDoAn);
         }
 
         private void tt_button11_Click(object sender, EventArgs e)
         {
             string query = "";
             string chon = tt_comboBox8_phat.Text;
-            if (chon == "Bộ môn")
+            if (chon == "B? m�n")
             {
-                 query = "SELECT magv AS 'Mã GV',tengv AS 'Họ tên',ROUND(thuctaidaotao, 2) AS 'Thực tải đào tạo',ROUND(taiyeucaudaotao, 2) AS 'Tải yêu cầu đào tạo',ROUND(phantram_daotao, 0) AS '% Đào tạo',ROUND(thuctaiNCKH, 2) AS 'Thực tải NCKH',ROUND(taiyeucauNCHK, 2) AS 'Tải yêu cầu NCKH',ROUND(phamtam_NCKH, 0) AS '% NCKH',ROUND(thuctai, 2) AS 'Thực tải ',ROUND(taiyeucau, 2) AS 'Tải yêu cầu',ROUND(phantram_tong, 0) AS '% Tổng' FROM tongtai_bomon(@mabm,@namhoc)";
+                 query = "SELECT magv AS 'M� GV',tengv AS 'H? t�n',ROUND(thuctaidaotao, 2) AS 'Th?c t?i ?�o t?o',ROUND(taiyeucaudaotao, 2) AS 'T?i y�u c?u ?�o t?o',ROUND(phantram_daotao, 0) AS '% ?�o t?o',ROUND(thuctaiNCKH, 2) AS 'Th?c t?i NCKH',ROUND(taiyeucauNCHK, 2) AS 'T?i y�u c?u NCKH',ROUND(phamtam_NCKH, 0) AS '% NCKH',ROUND(thuctai, 2) AS 'Th?c t?i ',ROUND(taiyeucau, 2) AS 'T?i y�u c?u',ROUND(phantram_tong, 0) AS '% T?ng' FROM tongtai_bomon(@mabm,@namhoc)";
 
             }
             else
             {
-                query = "SELECT magv AS 'Mã GV',tengv AS 'Họ tên',ROUND(thuctaidaotao, 2) AS 'Thực tải đào tạo',ROUND(taiyeucaudaotao, 2) AS 'Tải yêu cầu đào tạo',ROUND(phantram_daotao, 0) AS '% Đào tạo',ROUND(thuctaiNCKH, 2) AS 'Thực tải NCKH',ROUND(taiyeucauNCHK, 2) AS 'Tải yêu cầu NCKH',ROUND(phamtam_NCKH, 0) AS '% NCKH',ROUND(thuctai, 2) AS 'Thực tải ',ROUND(taiyeucau, 2) AS 'Tải yêu cầu',ROUND(phantram_tong, 0) AS '% Tổng' FROM tongtai_khoa(@mabm,@namhoc)";
+                query = "SELECT magv AS 'M� GV',tengv AS 'H? t�n',ROUND(thuctaidaotao, 2) AS 'Th?c t?i ?�o t?o',ROUND(taiyeucaudaotao, 2) AS 'T?i y�u c?u ?�o t?o',ROUND(phantram_daotao, 0) AS '% ?�o t?o',ROUND(thuctaiNCKH, 2) AS 'Th?c t?i NCKH',ROUND(taiyeucauNCHK, 2) AS 'T?i y�u c?u NCKH',ROUND(phamtam_NCKH, 0) AS '% NCKH',ROUND(thuctai, 2) AS 'Th?c t?i ',ROUND(taiyeucau, 2) AS 'T?i y�u c?u',ROUND(phantram_tong, 0) AS '% T?ng' FROM tongtai_khoa(@mabm,@namhoc)";
 
             }
             string ma = tt_comboBox8_tt.Text;
             string namhoc = tt_comboBox10.Text;
-           // string query ="SELECT magv AS 'Mã GV',tengv AS 'Họ tên',ROUND(thuctaidaotao, 2) AS 'Thực tải đào tạo',ROUND(taiyeucaudaotao, 2) AS 'Tải yêu cầu đào tạo',ROUND(phantram_daotao, 0) AS '% Đào tạo',ROUND(thuctaiNCKH, 2) AS 'Thực tải NCKH',ROUND(taiyeucauNCHK, 2) AS 'Tải yêu cầu NCKH',ROUND(phamtam_NCKH, 0) AS '% NCKH',ROUND(thuctai, 2) AS 'Thực tải ',ROUND(taiyeucau, 2) AS 'Tải yêu cầu',ROUND(phantram_tong, 0) AS '% Tổng' FROM tongtai_bomon(@mabm,@namhoc)";
+           // string query ="SELECT magv AS 'M� GV',tengv AS 'H? t�n',ROUND(thuctaidaotao, 2) AS 'Th?c t?i ?�o t?o',ROUND(taiyeucaudaotao, 2) AS 'T?i y�u c?u ?�o t?o',ROUND(phantram_daotao, 0) AS '% ?�o t?o',ROUND(thuctaiNCKH, 2) AS 'Th?c t?i NCKH',ROUND(taiyeucauNCHK, 2) AS 'T?i y�u c?u NCKH',ROUND(phamtam_NCKH, 0) AS '% NCKH',ROUND(thuctai, 2) AS 'Th?c t?i ',ROUND(taiyeucau, 2) AS 'T?i y�u c?u',ROUND(phantram_tong, 0) AS '% T?ng' FROM tongtai_bomon(@mabm,@namhoc)";
 
             string type2 = comboBox7.Text;
             SqlDataAdapter sda = new SqlDataAdapter();
@@ -501,18 +447,18 @@ namespace QUAN_LY_GIAO_VIEN
         {
             string chon = tt_comboBox8_phat.Text;
             tt_panel2.Visible = true;
-            if(chon=="Bộ môn")
+            if(chon=="B? m�n")
             {
-                label11_tttt.Text = "Chọn Mã Bộ môn:";
-                label14_ttttt.Text = "Tên Bộ môn";
-                string query = "SELECT MaDV FROM dbo.DONVI WHERE Capdonvi LIKE N'%Bộ môn%'";
+                label11_tttt.Text = "Ch?n M� B? m�n:";
+                label14_ttttt.Text = "T�n B? m�n";
+                string query = "SELECT MaDV FROM dbo.DONVI WHERE Capdonvi LIKE N'%B? m�n%'";
                 tt_comboBox8_tt.DataSource = getData(query).Tables[0];
                 tt_comboBox8_tt.DisplayMember = getData(query).Tables[0].Columns[0].ToString();
             }
             else
             {
-                label11_tttt.Text = "Chọn Mã Khoa:";
-                label14_ttttt.Text = "Tên Khoa";
+                label11_tttt.Text = "Ch?n M� Khoa:";
+                label14_ttttt.Text = "T�n Khoa";
                 string query = "SELECT MaDV FROM dbo.DONVI WHERE Capdonvi LIKE N'%Khoa%'";
                 tt_comboBox8_tt.DataSource = getData(query).Tables[0];
                 tt_comboBox8_tt.DisplayMember = getData(query).Tables[0].Columns[0].ToString();
@@ -538,9 +484,9 @@ namespace QUAN_LY_GIAO_VIEN
                         
                             
                             MenuItem itemPlay = new MenuItem();
-                            itemPlay.Text = "Tải đào tạo";
+                            itemPlay.Text = "T?i ?�o t?o";
                             MenuItem itemPlay1 = new MenuItem();
-                            itemPlay1.Text = "Tải Nghiên Cứu Khoa Học";
+                            itemPlay1.Text = "T?i Nghi�n C?u Khoa H?c";
                              itemPlay.Click += Show_taidaotao;
                             itemPlay1.Click += Show_taiNCKH;
                             cm.MenuItems.Add(itemPlay);
@@ -554,7 +500,7 @@ namespace QUAN_LY_GIAO_VIEN
         }
         private void Show_taidaotao(object sender, EventArgs e)
         {
-            Works_calculating.magvTT = (tt_dataGridView6.SelectedCells[0].OwningRow.Cells["Mã GV"].Value.ToString());
+            Works_calculating.magvTT = (tt_dataGridView6.SelectedCells[0].OwningRow.Cells["M� GV"].Value.ToString());
             Works_calculating.namhocTT = tt_comboBox10.Text;
             Works_calculating.DT = 1;
             Works_calculating.NCKH = 0;
@@ -565,7 +511,7 @@ namespace QUAN_LY_GIAO_VIEN
         }
         private void Show_taiNCKH(object sender, EventArgs e)
         {
-            Works_calculating.magvTT = (tt_dataGridView6.SelectedCells[0].OwningRow.Cells["Mã GV"].Value.ToString());
+            Works_calculating.magvTT = (tt_dataGridView6.SelectedCells[0].OwningRow.Cells["M� GV"].Value.ToString());
             Works_calculating.namhocTT = tt_comboBox10.Text;
             Works_calculating.DT = 0;
             Works_calculating.NCKH = 1;
@@ -577,7 +523,7 @@ namespace QUAN_LY_GIAO_VIEN
 
         private void button11_Click(object sender, EventArgs e)
         {
-            Export.ExportFile("TỔNG TẢI NĂM HỌC", tt_dataGridView6);
+            Export.ExportFile("T?NG T?I N?M H?C", tt_dataGridView6);
         }
     }
     
