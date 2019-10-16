@@ -36,7 +36,19 @@ namespace QUAN_LY_GIAO_VIEN
             SqlDataAdapter sda = new SqlDataAdapter();
             DataSet myDataSet = new DataSet();
             
-            usi
+            using (SqlConnection connection = new SqlConnection(ConnectionString.connectionString))
+            {
+                connection.Open();
+                SqlCommand sql = connection.CreateCommand();
+                sql.CommandText = query1;
+                sql.Parameters.Add(new SqlParameter("@magv", SqlDbType.NVarChar)).Value = magv;
+                sql.Parameters.Add(new SqlParameter("@namhoc", SqlDbType.NVarChar)).Value = namhoc;
+                sda.SelectCommand = sql;
+                myDataSet = new DataSet();
+                sda.Fill(myDataSet);
+                connection.Close();
+            }
+            dataGridView1.DataSource = myDataSet.Tables[0];
             dataGridView1.AutoResizeColumns();
 
             string query2 = "select *  from dbo.Func_GV_Khaothi (@magv,@namhoc) ";
