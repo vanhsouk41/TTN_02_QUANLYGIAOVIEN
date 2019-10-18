@@ -1,4 +1,4 @@
-Ôªønamespace QUAN_LY_GIAO_VIEN
+namespace QUAN_LY_GIAO_VIEN
 {
     partial class Works_calculating
     {
@@ -11,71 +11,7 @@
         /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing && (components != null))
-            {
-                components.Dispose();
-            }
-            base.Dispose(disposing);
-        }
-
-        #region Windows Form Designer generated code
-
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
-        private void InitializeComponent()
-        {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.button4 = new System.Windows.Forms.Button();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.MaGV1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.HoTen1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.GT1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DonVi1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenCTKH1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.LoaiCTKH1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.VaiTro1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ThoiGian1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Sotacgia1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.button3 = new System.Windows.Forms.Button();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.MaGV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.HoTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenCTKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.LoaiCTKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.VaiTro = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Sotacgia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+                    this.Sotacgia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GioChuan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.button11_phat = new System.Windows.Forms.Button();
@@ -222,7 +158,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(760, 56);
             this.textBox1.TabIndex = 1;
-            this.textBox1.Text = "TH·ªêNG K√ä T·∫¢I GI√ÅO VI√äN";
+            this.textBox1.Text = "TH?NG K  T?I GI¡O VI N";
             // 
             // tabControl1
             // 
@@ -258,7 +194,7 @@
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(1282, 624);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Ho·∫°t ƒë·ªông NCKH";
+            this.tabPage1.Text = "Ho?t ??ng NCKH";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // button4
@@ -267,7 +203,7 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(148, 27);
             this.button4.TabIndex = 8;
-            this.button4.Text = "In t·ªáp excel";
+            this.button4.Text = "In t?p excel";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -285,7 +221,7 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(154, 22);
             this.textBox4.TabIndex = 4;
-            this.textBox4.Text = "N·ªôi dung th·ªëng k√™";
+            this.textBox4.Text = "N?i dung th?ng kÍ";
             // 
             // textBox3
             // 
@@ -294,7 +230,7 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(154, 22);
             this.textBox3.TabIndex = 4;
-            this.textBox3.Text = "Th√¥ng tin gi√°o vi√™n";
+            this.textBox3.Text = "ThÙng tin gi·o viÍn";
             // 
             // textBox2
             // 
@@ -303,16 +239,16 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(124, 22);
             this.textBox2.TabIndex = 3;
-            this.textBox2.Text = "Th·ªëng k√™ theo";
+            this.textBox2.Text = "Th?ng kÍ theo";
             // 
             // comboBox2
             // 
-            this.comboBox2.DisplayMember = "B√†i b√°o khoa h·ªçc";
+            this.comboBox2.DisplayMember = "B‡i b·o khoa h?c";
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
-            "B√†i b√°o khoa h·ªçc",
-            "ƒê·ªÅ t√†i nghi√™n c·ª©u",
-            "S√°ch"});
+            "B‡i b·o khoa h?c",
+            "?? t‡i nghiÍn c?u",
+            "S·ch"});
             this.comboBox2.Location = new System.Drawing.Point(527, 98);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(187, 29);
@@ -320,11 +256,11 @@
             // 
             // comboBox1
             // 
-            this.comboBox1.DisplayMember = "M√£ gi√°o vi√™n";
+            this.comboBox1.DisplayMember = "M„ gi·o viÍn";
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "M√£ gi√°o vi√™n",
-            "T√™n gi√°o vi√™n"});
+            "M„ gi·o viÍn",
+            "TÍn gi·o viÍn"});
             this.comboBox1.Location = new System.Drawing.Point(527, 41);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(187, 29);
@@ -337,7 +273,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(73, 77);
             this.button1.TabIndex = 1;
-            this.button1.Text = "Th·ªëng k√™";
+            this.button1.Text = "Th?ng kÍ";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -373,7 +309,7 @@
             // MaGV1
             // 
             this.MaGV1.DataPropertyName = "MaGV";
-            this.MaGV1.HeaderText = "M√£ GV";
+            this.MaGV1.HeaderText = "M„ GV";
             this.MaGV1.Name = "MaGV1";
             this.MaGV1.ReadOnly = true;
             this.MaGV1.Width = 136;
@@ -381,7 +317,7 @@
             // HoTen1
             // 
             this.HoTen1.DataPropertyName = "HoTen";
-            this.HoTen1.HeaderText = "H·ªç v√† t√™n";
+            this.HoTen1.HeaderText = "H? v‡ tÍn";
             this.HoTen1.Name = "HoTen1";
             this.HoTen1.ReadOnly = true;
             this.HoTen1.Width = 136;
@@ -389,7 +325,7 @@
             // GT1
             // 
             this.GT1.DataPropertyName = "GT";
-            this.GT1.HeaderText = "Gi·ªõi t√≠nh";
+            this.GT1.HeaderText = "Gi?i tÌnh";
             this.GT1.Name = "GT1";
             this.GT1.ReadOnly = true;
             this.GT1.Width = 136;
@@ -397,7 +333,7 @@
             // DonVi1
             // 
             this.DonVi1.DataPropertyName = "DonVi";
-            this.DonVi1.HeaderText = "ƒê∆°n v·ªã";
+            this.DonVi1.HeaderText = "??n v?";
             this.DonVi1.Name = "DonVi1";
             this.DonVi1.ReadOnly = true;
             this.DonVi1.Width = 136;
@@ -405,7 +341,7 @@
             // TenCTKH1
             // 
             this.TenCTKH1.DataPropertyName = "TenCTKH";
-            this.TenCTKH1.HeaderText = "T√™n c√¥ng tr√¨nh";
+            this.TenCTKH1.HeaderText = "TÍn cÙng trÏnh";
             this.TenCTKH1.Name = "TenCTKH1";
             this.TenCTKH1.ReadOnly = true;
             this.TenCTKH1.Width = 135;
@@ -413,7 +349,7 @@
             // LoaiCTKH1
             // 
             this.LoaiCTKH1.DataPropertyName = "LoaiCTKH";
-            this.LoaiCTKH1.HeaderText = "Lo·∫°i c√¥ng tr√¨nh";
+            this.LoaiCTKH1.HeaderText = "Lo?i cÙng trÏnh";
             this.LoaiCTKH1.Name = "LoaiCTKH1";
             this.LoaiCTKH1.ReadOnly = true;
             this.LoaiCTKH1.Width = 136;
@@ -421,7 +357,7 @@
             // VaiTro1
             // 
             this.VaiTro1.DataPropertyName = "VaiTro";
-            this.VaiTro1.HeaderText = "Vai tr√≤";
+            this.VaiTro1.HeaderText = "Vai trÚ";
             this.VaiTro1.Name = "VaiTro1";
             this.VaiTro1.ReadOnly = true;
             this.VaiTro1.Width = 136;
@@ -429,7 +365,7 @@
             // ThoiGian1
             // 
             this.ThoiGian1.DataPropertyName = "ThoiGian";
-            this.ThoiGian1.HeaderText = "Th·ªùi gian";
+            this.ThoiGian1.HeaderText = "Th?i gian";
             this.ThoiGian1.Name = "ThoiGian1";
             this.ThoiGian1.ReadOnly = true;
             this.ThoiGian1.Width = 136;
@@ -437,7 +373,7 @@
             // Sotacgia1
             // 
             this.Sotacgia1.DataPropertyName = "Sotacgia";
-            this.Sotacgia1.HeaderText = "S·ªë t√°c gi·∫£";
+            this.Sotacgia1.HeaderText = "S? t·c gi?";
             this.Sotacgia1.Name = "Sotacgia1";
             this.Sotacgia1.ReadOnly = true;
             this.Sotacgia1.Width = 136;
@@ -462,7 +398,7 @@
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(1282, 624);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "T·∫£i nghi√™n c·ª©u khoa h·ªçc";
+            this.tabPage2.Text = "T?i nghiÍn c?u khoa h?c";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // button3
@@ -471,7 +407,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(150, 28);
             this.button3.TabIndex = 5;
-            this.button3.Text = "In t·ªáp excel";
+            this.button3.Text = "In t?p excel";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -484,7 +420,7 @@
             this.textBox13.Name = "textBox13";
             this.textBox13.Size = new System.Drawing.Size(100, 32);
             this.textBox13.TabIndex = 4;
-            this.textBox13.Text = "gi·ªù";
+            this.textBox13.Text = "gi?";
             // 
             // textBox12
             // 
@@ -504,14 +440,14 @@
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(184, 32);
             this.textBox11.TabIndex = 4;
-            this.textBox11.Text = "T·∫£i nghi√™n c·ª©u";
+            this.textBox11.Text = "T?i nghiÍn c?u";
             // 
             // comboBox3
             // 
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Items.AddRange(new object[] {
-            "M√£ gi√°o vi√™n",
-            "T√™n gi√°o vi√™n"});
+            "M„ gi·o viÍn",
+            "TÍn gi·o viÍn"});
             this.comboBox3.Location = new System.Drawing.Point(362, 38);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(150, 29);
@@ -523,7 +459,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(90, 87);
             this.button2.TabIndex = 2;
-            this.button2.Text = "Th·ªëng k√™";
+            this.button2.Text = "Th?ng kÍ";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -534,7 +470,7 @@
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(100, 22);
             this.textBox9.TabIndex = 1;
-            this.textBox9.Text = "NƒÉm h·ªçc";
+            this.textBox9.Text = "N?m h?c";
             // 
             // textBox8
             // 
@@ -543,7 +479,7 @@
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(163, 22);
             this.textBox8.TabIndex = 1;
-            this.textBox8.Text = "Th√¥ng tin gi√°o vi√™n";
+            this.textBox8.Text = "ThÙng tin gi·o viÍn";
             // 
             // textBox10
             // 
@@ -567,7 +503,7 @@
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(145, 22);
             this.textBox5.TabIndex = 1;
-            this.textBox5.Text = "T√¨m ki·∫øm theo";
+            this.textBox5.Text = "TÏm ki?m theo";
             // 
             // dataGridView2
             // 
@@ -610,7 +546,7 @@
             this.MaGV.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.MaGV.DataPropertyName = "MaGV";
             this.MaGV.FillWeight = 116.7621F;
-            this.MaGV.HeaderText = "M√£ GV";
+            this.MaGV.HeaderText = "M„ GV";
             this.MaGV.Name = "MaGV";
             this.MaGV.ReadOnly = true;
             // 
@@ -618,7 +554,7 @@
             // 
             this.HoTen.DataPropertyName = "HoTen";
             this.HoTen.FillWeight = 95.27247F;
-            this.HoTen.HeaderText = "H·ªç v√† t√™n";
+            this.HoTen.HeaderText = "H? v‡ tÍn";
             this.HoTen.Name = "HoTen";
             this.HoTen.ReadOnly = true;
             this.HoTen.Width = 166;
@@ -627,7 +563,7 @@
             // 
             this.TenCTKH.DataPropertyName = "TenCTKH";
             this.TenCTKH.FillWeight = 96.23032F;
-            this.TenCTKH.HeaderText = "C√¥ng tr√¨nh KH";
+            this.TenCTKH.HeaderText = "CÙng trÏnh KH";
             this.TenCTKH.Name = "TenCTKH";
             this.TenCTKH.ReadOnly = true;
             this.TenCTKH.Width = 169;
@@ -636,7 +572,7 @@
             // 
             this.LoaiCTKH.DataPropertyName = "LoaiCTKH";
             this.LoaiCTKH.FillWeight = 96.48413F;
-            this.LoaiCTKH.HeaderText = "Lo·∫°i c√¥ng tr√¨nh";
+            this.LoaiCTKH.HeaderText = "Lo?i cÙng trÏnh";
             this.LoaiCTKH.Name = "LoaiCTKH";
             this.LoaiCTKH.ReadOnly = true;
             this.LoaiCTKH.Width = 168;
@@ -645,7 +581,7 @@
             // 
             this.VaiTro.DataPropertyName = "VaiTro";
             this.VaiTro.FillWeight = 97.84447F;
-            this.VaiTro.HeaderText = "Vai tr√≤";
+            this.VaiTro.HeaderText = "Vai trÚ";
             this.VaiTro.Name = "VaiTro";
             this.VaiTro.ReadOnly = true;
             this.VaiTro.Width = 171;
@@ -654,7 +590,7 @@
             // 
             this.Sotacgia.DataPropertyName = "Sotacgia";
             this.Sotacgia.FillWeight = 98.44482F;
-            this.Sotacgia.HeaderText = "S·ªë t√°c gi·∫£";
+            this.Sotacgia.HeaderText = "S? t·c gi?";
             this.Sotacgia.Name = "Sotacgia";
             this.Sotacgia.ReadOnly = true;
             this.Sotacgia.Width = 172;
@@ -663,7 +599,7 @@
             // 
             this.GioChuan.DataPropertyName = "GioChuan";
             this.GioChuan.FillWeight = 98.96172F;
-            this.GioChuan.HeaderText = "Gi·ªù chu·∫©n";
+            this.GioChuan.HeaderText = "Gi? chu?n";
             this.GioChuan.Name = "GioChuan";
             this.GioChuan.ReadOnly = true;
             this.GioChuan.Width = 173;
@@ -684,7 +620,7 @@
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Size = new System.Drawing.Size(1282, 624);
             this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Ho·∫°t ƒë·ªông gi·∫£ng d·∫°y";
+            this.tabPage3.Text = "Ho?t ??ng gi?ng d?y";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // button11_phat
@@ -693,7 +629,7 @@
             this.button11_phat.Name = "button11_phat";
             this.button11_phat.Size = new System.Drawing.Size(150, 28);
             this.button11_phat.TabIndex = 8;
-            this.button11_phat.Text = "In t·ªáp excel";
+            this.button11_phat.Text = "In t?p excel";
             this.button11_phat.UseVisualStyleBackColor = true;
             this.button11_phat.Click += new System.EventHandler(this.button11_phat_Click);
             // 
@@ -714,7 +650,7 @@
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(84, 77);
             this.button7.TabIndex = 6;
-            this.button7.Text = "Th·ªëng k√™";
+            this.button7.Text = "Th?ng kÍ";
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
@@ -732,7 +668,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(157, 21);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Th√¥ng tin gi√°o vi√™n:";
+            this.label3.Text = "ThÙng tin gi·o viÍn:";
             // 
             // label2
             // 
@@ -741,7 +677,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(82, 21);
             this.label2.TabIndex = 3;
-            this.label2.Text = "NƒÉm h·ªçc:";
+            this.label2.Text = "N?m h?c:";
             // 
             // comboBox5
             // 
@@ -764,14 +700,14 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(127, 21);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Th·ªëng k√™ theo: ";
+            this.label1.Text = "Th?ng kÍ theo: ";
             // 
             // comboBox4
             // 
             this.comboBox4.FormattingEnabled = true;
             this.comboBox4.Items.AddRange(new object[] {
-            "M√£ gi√°o vi√™n",
-            "T√™n gi√°o vi√™n"});
+            "M„ gi·o viÍn",
+            "TÍn gi·o viÍn"});
             this.comboBox4.Location = new System.Drawing.Point(434, 42);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(190, 29);
@@ -792,7 +728,7 @@
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Size = new System.Drawing.Size(1282, 624);
             this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "T·∫£i gi·∫£ng d·∫°y";
+            this.tabPage4.Text = "T?i gi?ng d?y";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // button12_phat
@@ -801,7 +737,7 @@
             this.button12_phat.Name = "button12_phat";
             this.button12_phat.Size = new System.Drawing.Size(118, 34);
             this.button12_phat.TabIndex = 11;
-            this.button12_phat.Text = "In t√™p excel";
+            this.button12_phat.Text = "In tÍp excel";
             this.button12_phat.UseVisualStyleBackColor = true;
             this.button12_phat.Click += new System.EventHandler(this.button12_phat_Click);
             // 
@@ -881,7 +817,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(87, 21);
             this.label5.TabIndex = 4;
-            this.label5.Text = "NƒÉm h·ªçc: ";
+            this.label5.Text = "N?m h?c: ";
             // 
             // comboBox7
             // 
@@ -903,7 +839,7 @@
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(91, 27);
             this.button8.TabIndex = 2;
-            this.button8.Text = "T√≠nh";
+            this.button8.Text = "TÌnh";
             this.button8.UseVisualStyleBackColor = true;
             this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
@@ -914,14 +850,14 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(60, 21);
             this.label4.TabIndex = 1;
-            this.label4.Text = "Ch·ªçn: ";
+            this.label4.Text = "Ch?n: ";
             // 
             // comboBox6
             // 
             this.comboBox6.FormattingEnabled = true;
             this.comboBox6.Items.AddRange(new object[] {
-            "Gi√°o vi√™n",
-            "B·ªô m√¥n",
+            "Gi·o viÍn",
+            "B? mÙn",
             "Khoa"});
             this.comboBox6.Location = new System.Drawing.Point(293, 16);
             this.comboBox6.Name = "comboBox6";
@@ -940,7 +876,7 @@
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Size = new System.Drawing.Size(1282, 624);
             this.tabPage5.TabIndex = 4;
-            this.tabPage5.Text = "Th·ªëng k√™ nh√¢n l·ª±c";
+            this.tabPage5.Text = "Th?ng kÍ nh‚n l?c";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
             // button13_phat
@@ -949,7 +885,7 @@
             this.button13_phat.Name = "button13_phat";
             this.button13_phat.Size = new System.Drawing.Size(113, 34);
             this.button13_phat.TabIndex = 5;
-            this.button13_phat.Text = "In t·ªáp excel";
+            this.button13_phat.Text = "In t?p excel";
             this.button13_phat.UseVisualStyleBackColor = true;
             this.button13_phat.Click += new System.EventHandler(this.button13_phat_Click);
             // 
@@ -969,7 +905,7 @@
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(97, 53);
             this.button10.TabIndex = 3;
-            this.button10.Text = "Th·ªëng k√™";
+            this.button10.Text = "Th?ng kÍ";
             this.button10.UseVisualStyleBackColor = true;
             this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
@@ -989,7 +925,7 @@
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(169, 21);
             this.label10.TabIndex = 0;
-            this.label10.Text = "Ch·ªçn ng√†y th·ªëng k√™: ";
+            this.label10.Text = "Ch?n ng‡y th?ng kÍ: ";
             // 
             // tabPageKhaoThi
             // 
@@ -1009,7 +945,7 @@
             this.tabPageKhaoThi.Padding = new System.Windows.Forms.Padding(3);
             this.tabPageKhaoThi.Size = new System.Drawing.Size(1282, 624);
             this.tabPageKhaoThi.TabIndex = 5;
-            this.tabPageKhaoThi.Text = "Kh·∫£o th√≠";
+            this.tabPageKhaoThi.Text = "Kh?o thÌ";
             this.tabPageKhaoThi.UseVisualStyleBackColor = true;
             // 
             // btInExcel_KT
@@ -1031,7 +967,7 @@
             this.lbTongTai_KT.Name = "lbTongTai_KT";
             this.lbTongTai_KT.Size = new System.Drawing.Size(72, 21);
             this.lbTongTai_KT.TabIndex = 9;
-            this.lbTongTai_KT.Text = "T·ªïng t·∫£i";
+            this.lbTongTai_KT.Text = "T?ng t?i";
             // 
             // tbTongTai_KT
             // 
@@ -1048,7 +984,7 @@
             this.btThongKe_KT.Name = "btThongKe_KT";
             this.btThongKe_KT.Size = new System.Drawing.Size(159, 48);
             this.btThongKe_KT.TabIndex = 7;
-            this.btThongKe_KT.Text = "Th·ªëng k√™";
+            this.btThongKe_KT.Text = "Th?ng kÍ";
             this.btThongKe_KT.UseVisualStyleBackColor = true;
             this.btThongKe_KT.Click += new System.EventHandler(this.btThongKe_KT_Click);
             // 
@@ -1070,8 +1006,8 @@
             // 
             this.cbBoxNoiDung_KT.FormattingEnabled = true;
             this.cbBoxNoiDung_KT.Items.AddRange(new object[] {
-            "M√£ gi√°o vi√™n",
-            "T√™n gi√°o vi√™n"});
+            "M„ gi·o viÍn",
+            "TÍn gi·o viÍn"});
             this.cbBoxNoiDung_KT.Location = new System.Drawing.Point(293, 37);
             this.cbBoxNoiDung_KT.Name = "cbBoxNoiDung_KT";
             this.cbBoxNoiDung_KT.Size = new System.Drawing.Size(197, 21);
@@ -1085,7 +1021,7 @@
             this.lbNamHoc_KT.Name = "lbNamHoc_KT";
             this.lbNamHoc_KT.Size = new System.Drawing.Size(78, 21);
             this.lbNamHoc_KT.TabIndex = 3;
-            this.lbNamHoc_KT.Text = "NƒÉm h·ªçc";
+            this.lbNamHoc_KT.Text = "N?m h?c";
             // 
             // lbTuKhoa_KT
             // 
@@ -1095,7 +1031,7 @@
             this.lbTuKhoa_KT.Name = "lbTuKhoa_KT";
             this.lbTuKhoa_KT.Size = new System.Drawing.Size(73, 21);
             this.lbTuKhoa_KT.TabIndex = 2;
-            this.lbTuKhoa_KT.Text = "T·ª´ kh√≥a";
+            this.lbTuKhoa_KT.Text = "T? khÛa";
             // 
             // lbNoiDung_KT
             // 
@@ -1105,7 +1041,7 @@
             this.lbNoiDung_KT.Name = "lbNoiDung_KT";
             this.lbNoiDung_KT.Size = new System.Drawing.Size(79, 21);
             this.lbNoiDung_KT.TabIndex = 1;
-            this.lbNoiDung_KT.Text = "N·ªôi dung";
+            this.lbNoiDung_KT.Text = "N?i dung";
             // 
             // dataGridKhaoThi
             // 
@@ -1126,37 +1062,37 @@
             // MaGV_KT
             // 
             this.MaGV_KT.DataPropertyName = "MaGV";
-            this.MaGV_KT.HeaderText = "M√£ gi√°o vi√™n";
+            this.MaGV_KT.HeaderText = "M„ gi·o viÍn";
             this.MaGV_KT.Name = "MaGV_KT";
             // 
             // HoTen_KT
             // 
             this.HoTen_KT.DataPropertyName = "HoTen";
-            this.HoTen_KT.HeaderText = "T√™n gi√°o vi√™n";
+            this.HoTen_KT.HeaderText = "TÍn gi·o viÍn";
             this.HoTen_KT.Name = "HoTen_KT";
             // 
             // HocPhan
             // 
             this.HocPhan.DataPropertyName = "HocPhan";
-            this.HocPhan.HeaderText = "H·ªçc ph·∫ßn";
+            this.HocPhan.HeaderText = "H?c ph?n";
             this.HocPhan.Name = "HocPhan";
             // 
             // HinhThucThi_KT
             // 
             this.HinhThucThi_KT.DataPropertyName = "HinhThucThi";
-            this.HinhThucThi_KT.HeaderText = "H√¨nh th·ª©c thi";
+            this.HinhThucThi_KT.HeaderText = "HÏnh th?c thi";
             this.HinhThucThi_KT.Name = "HinhThucThi_KT";
             // 
             // SoLuong_KT
             // 
             this.SoLuong_KT.DataPropertyName = "SoLuong";
-            this.SoLuong_KT.HeaderText = "S·ªë l∆∞·ª£ng";
+            this.SoLuong_KT.HeaderText = "S? l??ng";
             this.SoLuong_KT.Name = "SoLuong_KT";
             // 
             // Tai_KT
             // 
             this.Tai_KT.DataPropertyName = "TaiKhaoThi";
-            this.Tai_KT.HeaderText = "T·∫£i";
+            this.Tai_KT.HeaderText = "T?i";
             this.Tai_KT.Name = "Tai_KT";
             // 
             // tabPageHoiDong
@@ -1177,7 +1113,7 @@
             this.tabPageHoiDong.Padding = new System.Windows.Forms.Padding(3);
             this.tabPageHoiDong.Size = new System.Drawing.Size(1282, 624);
             this.tabPageHoiDong.TabIndex = 6;
-            this.tabPageHoiDong.Text = "Tham gia c√°c h·ªôi ƒë·ªìng";
+            this.tabPageHoiDong.Text = "Tham gia c·c h?i ??ng";
             this.tabPageHoiDong.UseVisualStyleBackColor = true;
             // 
             // btInExcel_HD
@@ -1199,7 +1135,7 @@
             this.lbTongTai_HD.Name = "lbTongTai_HD";
             this.lbTongTai_HD.Size = new System.Drawing.Size(72, 21);
             this.lbTongTai_HD.TabIndex = 18;
-            this.lbTongTai_HD.Text = "T·ªïng t·∫£i";
+            this.lbTongTai_HD.Text = "T?ng t?i";
             // 
             // tbTongTai_HD
             // 
@@ -1216,7 +1152,7 @@
             this.btThongKe_HD.Name = "btThongKe_HD";
             this.btThongKe_HD.Size = new System.Drawing.Size(159, 48);
             this.btThongKe_HD.TabIndex = 16;
-            this.btThongKe_HD.Text = "Th·ªëng k√™";
+            this.btThongKe_HD.Text = "Th?ng kÍ";
             this.btThongKe_HD.UseVisualStyleBackColor = true;
             this.btThongKe_HD.Click += new System.EventHandler(this.btThongKe_HD_Click);
             // 
@@ -1238,8 +1174,8 @@
             // 
             this.cbBoxNoiDung_HD.FormattingEnabled = true;
             this.cbBoxNoiDung_HD.Items.AddRange(new object[] {
-            "M√£ gi√°o vi√™n",
-            "T√™n gi√°o vi√™n"});
+            "M„ gi·o viÍn",
+            "TÍn gi·o viÍn"});
             this.cbBoxNoiDung_HD.Location = new System.Drawing.Point(291, 36);
             this.cbBoxNoiDung_HD.Name = "cbBoxNoiDung_HD";
             this.cbBoxNoiDung_HD.Size = new System.Drawing.Size(197, 21);
@@ -1253,7 +1189,7 @@
             this.lbNamHoc_HD.Name = "lbNamHoc_HD";
             this.lbNamHoc_HD.Size = new System.Drawing.Size(78, 21);
             this.lbNamHoc_HD.TabIndex = 12;
-            this.lbNamHoc_HD.Text = "NƒÉm h·ªçc";
+            this.lbNamHoc_HD.Text = "N?m h?c";
             // 
             // lbTuKhoa_HD
             // 
@@ -1263,7 +1199,7 @@
             this.lbTuKhoa_HD.Name = "lbTuKhoa_HD";
             this.lbTuKhoa_HD.Size = new System.Drawing.Size(73, 21);
             this.lbTuKhoa_HD.TabIndex = 11;
-            this.lbTuKhoa_HD.Text = "T·ª´ kh√≥a";
+            this.lbTuKhoa_HD.Text = "T? khÛa";
             // 
             // lbNoiDung_HD
             // 
@@ -1273,7 +1209,7 @@
             this.lbNoiDung_HD.Name = "lbNoiDung_HD";
             this.lbNoiDung_HD.Size = new System.Drawing.Size(79, 21);
             this.lbNoiDung_HD.TabIndex = 10;
-            this.lbNoiDung_HD.Text = "N·ªôi dung";
+            this.lbNoiDung_HD.Text = "N?i dung";
             // 
             // dataGridHoiDong
             // 
@@ -1295,43 +1231,43 @@
             // MaGV_HD
             // 
             this.MaGV_HD.DataPropertyName = "MaGV";
-            this.MaGV_HD.HeaderText = "M√£ gi√°o vi√™n";
+            this.MaGV_HD.HeaderText = "M„ gi·o viÍn";
             this.MaGV_HD.Name = "MaGV_HD";
             // 
             // HoTen_HD
             // 
             this.HoTen_HD.DataPropertyName = "HoTen";
-            this.HoTen_HD.HeaderText = "T√™n gi√°o vi√™n";
+            this.HoTen_HD.HeaderText = "TÍn gi·o viÍn";
             this.HoTen_HD.Name = "HoTen_HD";
             // 
             // TenHD_HD
             // 
             this.TenHD_HD.DataPropertyName = "TenHD";
-            this.TenHD_HD.HeaderText = "T√™n h·ªôi ƒë·ªìng";
+            this.TenHD_HD.HeaderText = "TÍn h?i ??ng";
             this.TenHD_HD.Name = "TenHD_HD";
             // 
             // DoiTuong_HD
             // 
             this.DoiTuong_HD.DataPropertyName = "DoiTuong";
-            this.DoiTuong_HD.HeaderText = "ƒê·ªëi t∆∞·ª£ng";
+            this.DoiTuong_HD.HeaderText = "??i t??ng";
             this.DoiTuong_HD.Name = "DoiTuong_HD";
             // 
             // VaiTro_HD
             // 
             this.VaiTro_HD.DataPropertyName = "VaiTro";
-            this.VaiTro_HD.HeaderText = "Vai tr√≤";
+            this.VaiTro_HD.HeaderText = "Vai trÚ";
             this.VaiTro_HD.Name = "VaiTro_HD";
             // 
             // SoLuong_HD
             // 
             this.SoLuong_HD.DataPropertyName = "SoLuong";
-            this.SoLuong_HD.HeaderText = "S·ªë l∆∞·ª£ng";
+            this.SoLuong_HD.HeaderText = "S? l??ng";
             this.SoLuong_HD.Name = "SoLuong_HD";
             // 
             // Tai_HD
             // 
             this.Tai_HD.DataPropertyName = "TaiHoiDong";
-            this.Tai_HD.HeaderText = "T·∫£i";
+            this.Tai_HD.HeaderText = "T?i";
             this.Tai_HD.Name = "Tai_HD";
             // 
             // tabPageDoAn
@@ -1352,7 +1288,7 @@
             this.tabPageDoAn.Padding = new System.Windows.Forms.Padding(3);
             this.tabPageDoAn.Size = new System.Drawing.Size(1282, 624);
             this.tabPageDoAn.TabIndex = 7;
-            this.tabPageDoAn.Text = "H∆∞·ªõng d·∫´n ƒë·ªì √°n";
+            this.tabPageDoAn.Text = "H??ng d?n ?? ·n";
             this.tabPageDoAn.UseVisualStyleBackColor = true;
             // 
             // btInExcel_DA
@@ -1374,7 +1310,7 @@
             this.lbTongTai_DA.Name = "lbTongTai_DA";
             this.lbTongTai_DA.Size = new System.Drawing.Size(72, 21);
             this.lbTongTai_DA.TabIndex = 18;
-            this.lbTongTai_DA.Text = "T·ªïng t·∫£i";
+            this.lbTongTai_DA.Text = "T?ng t?i";
             // 
             // tbTongTai_DA
             // 
@@ -1391,7 +1327,7 @@
             this.btThongKe_DA.Name = "btThongKe_DA";
             this.btThongKe_DA.Size = new System.Drawing.Size(159, 48);
             this.btThongKe_DA.TabIndex = 16;
-            this.btThongKe_DA.Text = "Th·ªëng k√™";
+            this.btThongKe_DA.Text = "Th?ng kÍ";
             this.btThongKe_DA.UseVisualStyleBackColor = true;
             this.btThongKe_DA.Click += new System.EventHandler(this.btThongKe_DA_Click);
             // 
@@ -1413,8 +1349,8 @@
             // 
             this.cbBoxNoiDung_DA.FormattingEnabled = true;
             this.cbBoxNoiDung_DA.Items.AddRange(new object[] {
-            "M√£ gi√°o vi√™n",
-            "T√™n gi√°o vi√™n"});
+            "M„ gi·o viÍn",
+            "TÍn gi·o viÍn"});
             this.cbBoxNoiDung_DA.Location = new System.Drawing.Point(291, 36);
             this.cbBoxNoiDung_DA.Name = "cbBoxNoiDung_DA";
             this.cbBoxNoiDung_DA.Size = new System.Drawing.Size(197, 21);
@@ -1428,7 +1364,7 @@
             this.lbNamHoc_DA.Name = "lbNamHoc_DA";
             this.lbNamHoc_DA.Size = new System.Drawing.Size(78, 21);
             this.lbNamHoc_DA.TabIndex = 12;
-            this.lbNamHoc_DA.Text = "NƒÉm h·ªçc";
+            this.lbNamHoc_DA.Text = "N?m h?c";
             // 
             // lbTuKhoa_DA
             // 
@@ -1438,7 +1374,7 @@
             this.lbTuKhoa_DA.Name = "lbTuKhoa_DA";
             this.lbTuKhoa_DA.Size = new System.Drawing.Size(73, 21);
             this.lbTuKhoa_DA.TabIndex = 11;
-            this.lbTuKhoa_DA.Text = "T·ª´ kh√≥a";
+            this.lbTuKhoa_DA.Text = "T? khÛa";
             // 
             // laNoiDung_DA
             // 
@@ -1448,7 +1384,7 @@
             this.laNoiDung_DA.Name = "laNoiDung_DA";
             this.laNoiDung_DA.Size = new System.Drawing.Size(79, 21);
             this.laNoiDung_DA.TabIndex = 10;
-            this.laNoiDung_DA.Text = "N·ªôi dung";
+            this.laNoiDung_DA.Text = "N?i dung";
             // 
             // dataGridDoAn
             // 
@@ -1470,7 +1406,7 @@
             this.MaGV_DA.DataPropertyName = "MaGV";
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MaGV_DA.DefaultCellStyle = dataGridViewCellStyle4;
-            this.MaGV_DA.HeaderText = "M√£ gi√°o vi√™n";
+            this.MaGV_DA.HeaderText = "M„ gi·o viÍn";
             this.MaGV_DA.Name = "MaGV_DA";
             this.MaGV_DA.ReadOnly = true;
             // 
@@ -1479,7 +1415,7 @@
             this.TenGV_DA.DataPropertyName = "HoTen";
             dataGridViewCellStyle5.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TenGV_DA.DefaultCellStyle = dataGridViewCellStyle5;
-            this.TenGV_DA.HeaderText = "T√™n gi√°o vi√™n";
+            this.TenGV_DA.HeaderText = "TÍn gi·o viÍn";
             this.TenGV_DA.Name = "TenGV_DA";
             // 
             // TenDA_DA
@@ -1487,7 +1423,7 @@
             this.TenDA_DA.DataPropertyName = "TenDA";
             dataGridViewCellStyle6.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TenDA_DA.DefaultCellStyle = dataGridViewCellStyle6;
-            this.TenDA_DA.HeaderText = "T√™n ƒë·ªì √°n";
+            this.TenDA_DA.HeaderText = "TÍn ?? ·n";
             this.TenDA_DA.Name = "TenDA_DA";
             // 
             // DVQL_DA
@@ -1495,13 +1431,13 @@
             this.DVQL_DA.DataPropertyName = "DVQL";
             dataGridViewCellStyle7.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DVQL_DA.DefaultCellStyle = dataGridViewCellStyle7;
-            this.DVQL_DA.HeaderText = "ƒê∆°n v·ªã qu·∫£n l√Ω";
+            this.DVQL_DA.HeaderText = "??n v? qu?n l˝";
             this.DVQL_DA.Name = "DVQL_DA";
             // 
             // Tai_DA
             // 
             this.Tai_DA.DataPropertyName = "TaiDoAn";
-            this.Tai_DA.HeaderText = "T·∫£i";
+            this.Tai_DA.HeaderText = "T?i";
             this.Tai_DA.Name = "Tai_DA";
             // 
             // tabPage6
@@ -1517,7 +1453,7 @@
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage6.Size = new System.Drawing.Size(1282, 624);
             this.tabPage6.TabIndex = 8;
-            this.tabPage6.Text = "T·ªïng t·∫£i trong nƒÉm h·ªçc";
+            this.tabPage6.Text = "T?ng t?i trong n?m h?c";
             this.tabPage6.UseVisualStyleBackColor = true;
             // 
             // tt_label11_tt
@@ -1527,14 +1463,14 @@
             this.tt_label11_tt.Name = "tt_label11_tt";
             this.tt_label11_tt.Size = new System.Drawing.Size(156, 21);
             this.tt_label11_tt.TabIndex = 12;
-            this.tt_label11_tt.Text = "Ch·ªçn c·∫•p th√¥ng k√™:";
+            this.tt_label11_tt.Text = "Ch?n c?p thÙng kÍ:";
             // 
             // tt_comboBox8_phat
             // 
             this.tt_comboBox8_phat.FormattingEnabled = true;
             this.tt_comboBox8_phat.Items.AddRange(new object[] {
             "Khoa",
-            "B·ªô m√¥n"});
+            "B? mÙn"});
             this.tt_comboBox8_phat.Location = new System.Drawing.Point(651, 30);
             this.tt_comboBox8_phat.Name = "tt_comboBox8_phat";
             this.tt_comboBox8_phat.Size = new System.Drawing.Size(121, 29);
@@ -1589,7 +1525,7 @@
             this.tt_button11.Name = "tt_button11";
             this.tt_button11.Size = new System.Drawing.Size(91, 27);
             this.tt_button11.TabIndex = 8;
-            this.tt_button11.Text = "T√≠nh";
+            this.tt_button11.Text = "TÌnh";
             this.tt_button11.UseVisualStyleBackColor = true;
             this.tt_button11.Click += new System.EventHandler(this.tt_button11_Click);
             // 
@@ -1630,7 +1566,7 @@
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(82, 21);
             this.label13.TabIndex = 5;
-            this.label13.Text = "NƒÉm h·ªçc:";
+            this.label13.Text = "N?m h?c:";
             // 
             // label12
             // 
@@ -1663,7 +1599,7 @@
             // 
             // button6
             // 
-            this.button6.BackgroundImage = global::QUAN_LY_GIAO_VIEN.Properties.Resources.t·∫£i_xu·ªëng__1_;
+            this.button6.BackgroundImage = global::QUAN_LY_GIAO_VIEN.Properties.Resources.t?i_xu?ng__1_;
             this.button6.Location = new System.Drawing.Point(1154, 1);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(133, 111);
@@ -1693,7 +1629,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "Works_calculating";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Th·ªëng k√™ th√¥ng tin";
+            this.Text = "Th?ng kÍ thÙng tin";
             this.Load += new System.EventHandler(this.Works_calculating_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabControl1.ResumeLayout(false);
