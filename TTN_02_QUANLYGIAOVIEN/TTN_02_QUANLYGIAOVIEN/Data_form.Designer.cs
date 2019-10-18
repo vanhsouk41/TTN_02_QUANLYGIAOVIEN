@@ -2,7 +2,90 @@ namespace QUAN_LY_GIAO_VIEN
 {
     partial class Data_form
     {
-                    this.MaBB = new System.Windows.Forms.DataGridViewTextBoxColumn();
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.label1 = new System.Windows.Forms.Label();
+            this.phat1 = new System.Windows.Forms.TabPage();
+            this.button11 = new System.Windows.Forms.Button();
+            this.label6_phat = new System.Windows.Forms.Label();
+            this.lop_hp_datagitview = new System.Windows.Forms.DataGridView();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label18_phat = new System.Windows.Forms.Label();
+            this.label17_phat = new System.Windows.Forms.Label();
+            this.label16_phat = new System.Windows.Forms.Label();
+            this.label15_phat = new System.Windows.Forms.Label();
+            this.label14_phat = new System.Windows.Forms.Label();
+            this.label13_phat = new System.Windows.Forms.Label();
+            this.label12_phat = new System.Windows.Forms.Label();
+            this.label11_phat = new System.Windows.Forms.Label();
+            this.label9_phat = new System.Windows.Forms.Label();
+            this.textBox22_phat = new System.Windows.Forms.TextBox();
+            this.textBox21_phat = new System.Windows.Forms.TextBox();
+            this.textBox20_phat = new System.Windows.Forms.TextBox();
+            this.textBox19_phat = new System.Windows.Forms.TextBox();
+            this.textBox18_phat = new System.Windows.Forms.TextBox();
+            this.textBox17_phat = new System.Windows.Forms.TextBox();
+            this.textBox16_phat = new System.Windows.Forms.TextBox();
+            this.textBox15_phat = new System.Windows.Forms.TextBox();
+            this.textBox14_phat = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.textBox9_phat = new System.Windows.Forms.TextBox();
+            this.comboBox3_phat = new System.Windows.Forms.ComboBox();
+            this.button11_LHP = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.tabPage9 = new System.Windows.Forms.TabPage();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.button9 = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.button4 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.MaBB = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenBB = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.LoaiBB = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NgayDang = new System.Windows.Forms.DataGridViewTextBoxColumn();
