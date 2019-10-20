@@ -428,6 +428,55 @@ namespace QUAN_LY_GIAO_VIEN
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Tìm ki?m";
             // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.button8);
+            this.groupBox3.Controls.Add(this.button7);
+            this.groupBox3.Controls.Add(this.button6);
+            this.groupBox3.Controls.Add(this.button5);
+            this.groupBox3.Controls.Add(this.button3);
+            this.groupBox3.Location = new System.Drawing.Point(1136, 292);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(200, 334);
+            this.groupBox3.TabIndex = 14;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Ch?c n?ng";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.comboBox2);
+            this.groupBox2.Controls.Add(this.textBox1);
+            this.groupBox2.Controls.Add(this.textBox2);
+            this.groupBox2.Controls.Add(this.textBox3);
+            this.groupBox2.Controls.Add(this.dateTimePicker1);
+            this.groupBox2.Controls.Add(this.textBox5);
+            this.groupBox2.Controls.Add(this.textBox10);
+            this.groupBox2.Controls.Add(this.textBox6);
+            this.groupBox2.Controls.Add(this.textBox13);
+            this.groupBox2.Controls.Add(this.textBox7);
+            this.groupBox2.Controls.Add(this.textBox12);
+            this.groupBox2.Controls.Add(this.textBox8);
+            this.groupBox2.Location = new System.Drawing.Point(211, 292);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(908, 336);
+            this.groupBox2.TabIndex = 13;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Thông tin";
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "??ng trong k? y?u NCKH trong n??c",
+            "??ng trên t?p chí KHCN trong n??c ISSN",
+            "??ng trong k? yêu NCKH qu?c t?",
+            "??ng trên t?p chí KHCN qu?c t? ISI"});
+            this.comboBox2.Location = new System.Drawing.Point(136, 174);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(230, 27);
+            this.comboBox2.TabIndex = 11;
+
+            // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
@@ -476,54 +525,8 @@ namespace QUAN_LY_GIAO_VIEN
             this.button9.Text = "Tìm ki?m";
             this.button9.UseVisualStyleBackColor = true;
             this.button9.Click += new System.EventHandler(this.button9_Click);
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.button8);
-            this.groupBox3.Controls.Add(this.button7);
-            this.groupBox3.Controls.Add(this.button6);
-            this.groupBox3.Controls.Add(this.button5);
-            this.groupBox3.Controls.Add(this.button3);
-            this.groupBox3.Location = new System.Drawing.Point(1136, 292);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(200, 334);
-            this.groupBox3.TabIndex = 14;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Ch?c n?ng";
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.comboBox2);
-            this.groupBox2.Controls.Add(this.textBox1);
-            this.groupBox2.Controls.Add(this.textBox2);
-            this.groupBox2.Controls.Add(this.textBox3);
-            this.groupBox2.Controls.Add(this.dateTimePicker1);
-            this.groupBox2.Controls.Add(this.textBox5);
-            this.groupBox2.Controls.Add(this.textBox10);
-            this.groupBox2.Controls.Add(this.textBox6);
-            this.groupBox2.Controls.Add(this.textBox13);
-            this.groupBox2.Controls.Add(this.textBox7);
-            this.groupBox2.Controls.Add(this.textBox12);
-            this.groupBox2.Controls.Add(this.textBox8);
-            this.groupBox2.Location = new System.Drawing.Point(211, 292);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(908, 336);
-            this.groupBox2.TabIndex = 13;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Thông tin";
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "??ng trong k? y?u NCKH trong n??c",
-            "??ng trên t?p chí KHCN trong n??c ISSN",
-            "??ng trong k? yêu NCKH qu?c t?",
-            "??ng trên t?p chí KHCN qu?c t? ISI"});
-            this.comboBox2.Location = new System.Drawing.Point(136, 174);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(230, 27);
-            this.comboBox2.TabIndex = 11;
+
+
             // 
             // textBox1
             // 
