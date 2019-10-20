@@ -63,6 +63,21 @@
             this.pictureBox1.TabStop = false;
 
             // 
+            // label1
+            // 
+            this.label1.AllowDrop = true;
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label1.Location = new System.Drawing.Point(23, 118);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(773, 42);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "PHẦN MỀM HỖ TRỢ QUẢN LÝ GIÁO VIÊN";
+            // 
             // label2
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
@@ -98,23 +113,6 @@
             this.button1.TabIndex = 4;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-
-
-            // 
-            // label1
-            // 
-            this.label1.AllowDrop = true;
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label1.Location = new System.Drawing.Point(23, 118);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(773, 42);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "PHẦN MỀM HỖ TRỢ QUẢN LÝ GIÁO VIÊN";
             // 
             // Form1
             // 
