@@ -79,22 +79,7 @@ namespace QUAN_LY_GIAO_VIEN
             string magv3 = Works_calculating.magvTT;
             string namhoc3 = Works_calculating.namhocTT;
 
-            SqlDataAdapter sda3 = new SqlDataAdapter();
-            DataSet myDataSet3 = new DataSet();
-
-            using (SqlConnection connection = new SqlConnection(ConnectionString.connectionString))
-            {
-                connection.Open();
-                SqlCommand sql3 = connection.CreateCommand();
-                sql3.CommandText = query3;
-                sql3.Parameters.Add(new SqlParameter("@magv", SqlDbType.NVarChar)).Value = magv;
-                sql3.Parameters.Add(new SqlParameter("@namhoc", SqlDbType.NVarChar)).Value = namhoc;
-                sda3.SelectCommand = sql3;
-                myDataSet3 = new DataSet();
-                sda3.Fill(myDataSet3);
-                connection.Close();
-            }
-            dataGridView3.DataSource = myDataSet3.Tables[0];
+            SqlDat
             dataGridView3.AutoResizeColumns();
         }
         public void show_taiNCKH()
