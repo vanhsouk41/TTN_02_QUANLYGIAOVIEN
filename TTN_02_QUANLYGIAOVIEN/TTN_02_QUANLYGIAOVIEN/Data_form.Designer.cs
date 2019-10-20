@@ -228,6 +228,69 @@ namespace QUAN_LY_GIAO_VIEN
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(831, 289);
             this.panel2.TabIndex = 1;
+       // 
+            // textBox22_phat
+            // 
+            this.textBox22_phat.Location = new System.Drawing.Point(661, 247);
+            this.textBox22_phat.Name = "textBox22_phat";
+            this.textBox22_phat.Size = new System.Drawing.Size(114, 29);
+            this.textBox22_phat.TabIndex = 8;
+            // 
+            // textBox21_phat
+            // 
+            this.textBox21_phat.Location = new System.Drawing.Point(661, 197);
+            this.textBox21_phat.Name = "textBox21_phat";
+            this.textBox21_phat.Size = new System.Drawing.Size(114, 29);
+            this.textBox21_phat.TabIndex = 7;
+            // 
+            // textBox20_phat
+            // 
+            this.textBox20_phat.Location = new System.Drawing.Point(661, 145);
+            this.textBox20_phat.Name = "textBox20_phat";
+            this.textBox20_phat.Size = new System.Drawing.Size(114, 29);
+            this.textBox20_phat.TabIndex = 6;
+            // 
+            // textBox19_phat
+            // 
+            this.textBox19_phat.Location = new System.Drawing.Point(123, 197);
+            this.textBox19_phat.Name = "textBox19_phat";
+            this.textBox19_phat.Size = new System.Drawing.Size(126, 29);
+            this.textBox19_phat.TabIndex = 5;
+            // 
+            // textBox18_phat
+            // 
+            this.textBox18_phat.Location = new System.Drawing.Point(123, 50);
+            this.textBox18_phat.Name = "textBox18_phat";
+            this.textBox18_phat.Size = new System.Drawing.Size(361, 29);
+            this.textBox18_phat.TabIndex = 4;
+            // 
+            // textBox17_phat
+            // 
+            this.textBox17_phat.Location = new System.Drawing.Point(123, 98);
+            this.textBox17_phat.Name = "textBox17_phat";
+            this.textBox17_phat.Size = new System.Drawing.Size(126, 29);
+            this.textBox17_phat.TabIndex = 3;
+            // 
+            // textBox16_phat
+            // 
+            this.textBox16_phat.Location = new System.Drawing.Point(123, 244);
+            this.textBox16_phat.Name = "textBox16_phat";
+            this.textBox16_phat.Size = new System.Drawing.Size(126, 29);
+            this.textBox16_phat.TabIndex = 2;
+            // 
+            // textBox15_phat
+            // 
+            this.textBox15_phat.Location = new System.Drawing.Point(123, 150);
+            this.textBox15_phat.Name = "textBox15_phat";
+            this.textBox15_phat.Size = new System.Drawing.Size(361, 29);
+            this.textBox15_phat.TabIndex = 1;
+            // 
+            // textBox14_phat
+            // 
+            this.textBox14_phat.Location = new System.Drawing.Point(123, 10);
+            this.textBox14_phat.Name = "textBox14_phat";
+            this.textBox14_phat.Size = new System.Drawing.Size(126, 29);
+            this.textBox14_phat.TabIndex = 0;
             // 
             // label18_phat
             // 
@@ -318,69 +381,7 @@ namespace QUAN_LY_GIAO_VIEN
             this.label9_phat.Size = new System.Drawing.Size(67, 21);
             this.label9_phat.TabIndex = 9;
             this.label9_phat.Text = "Ma l?p:";
-            // 
-            // textBox22_phat
-            // 
-            this.textBox22_phat.Location = new System.Drawing.Point(661, 247);
-            this.textBox22_phat.Name = "textBox22_phat";
-            this.textBox22_phat.Size = new System.Drawing.Size(114, 29);
-            this.textBox22_phat.TabIndex = 8;
-            // 
-            // textBox21_phat
-            // 
-            this.textBox21_phat.Location = new System.Drawing.Point(661, 197);
-            this.textBox21_phat.Name = "textBox21_phat";
-            this.textBox21_phat.Size = new System.Drawing.Size(114, 29);
-            this.textBox21_phat.TabIndex = 7;
-            // 
-            // textBox20_phat
-            // 
-            this.textBox20_phat.Location = new System.Drawing.Point(661, 145);
-            this.textBox20_phat.Name = "textBox20_phat";
-            this.textBox20_phat.Size = new System.Drawing.Size(114, 29);
-            this.textBox20_phat.TabIndex = 6;
-            // 
-            // textBox19_phat
-            // 
-            this.textBox19_phat.Location = new System.Drawing.Point(123, 197);
-            this.textBox19_phat.Name = "textBox19_phat";
-            this.textBox19_phat.Size = new System.Drawing.Size(126, 29);
-            this.textBox19_phat.TabIndex = 5;
-            // 
-            // textBox18_phat
-            // 
-            this.textBox18_phat.Location = new System.Drawing.Point(123, 50);
-            this.textBox18_phat.Name = "textBox18_phat";
-            this.textBox18_phat.Size = new System.Drawing.Size(361, 29);
-            this.textBox18_phat.TabIndex = 4;
-            // 
-            // textBox17_phat
-            // 
-            this.textBox17_phat.Location = new System.Drawing.Point(123, 98);
-            this.textBox17_phat.Name = "textBox17_phat";
-            this.textBox17_phat.Size = new System.Drawing.Size(126, 29);
-            this.textBox17_phat.TabIndex = 3;
-            // 
-            // textBox16_phat
-            // 
-            this.textBox16_phat.Location = new System.Drawing.Point(123, 244);
-            this.textBox16_phat.Name = "textBox16_phat";
-            this.textBox16_phat.Size = new System.Drawing.Size(126, 29);
-            this.textBox16_phat.TabIndex = 2;
-            // 
-            // textBox15_phat
-            // 
-            this.textBox15_phat.Location = new System.Drawing.Point(123, 150);
-            this.textBox15_phat.Name = "textBox15_phat";
-            this.textBox15_phat.Size = new System.Drawing.Size(361, 29);
-            this.textBox15_phat.TabIndex = 1;
-            // 
-            // textBox14_phat
-            // 
-            this.textBox14_phat.Location = new System.Drawing.Point(123, 10);
-            this.textBox14_phat.Name = "textBox14_phat";
-            this.textBox14_phat.Size = new System.Drawing.Size(126, 29);
-            this.textBox14_phat.TabIndex = 0;
+     
             // 
             // panel1
             // 
