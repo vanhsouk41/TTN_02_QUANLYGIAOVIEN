@@ -228,7 +228,7 @@ namespace QUAN_LY_GIAO_VIEN
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(831, 289);
             this.panel2.TabIndex = 1;
-       // 
+           // 
             // textBox22_phat
             // 
             this.textBox22_phat.Location = new System.Drawing.Point(661, 247);
@@ -291,56 +291,6 @@ namespace QUAN_LY_GIAO_VIEN
             this.textBox14_phat.Name = "textBox14_phat";
             this.textBox14_phat.Size = new System.Drawing.Size(126, 29);
             this.textBox14_phat.TabIndex = 0;
-            // 
-            // label18_phat
-            // 
-            this.label18_phat.AutoSize = true;
-            this.label18_phat.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label18_phat.Location = new System.Drawing.Point(557, 250);
-            this.label18_phat.Name = "label18_phat";
-            this.label18_phat.Size = new System.Drawing.Size(72, 21);
-            this.label18_phat.TabIndex = 18;
-            this.label18_phat.Text = "Ma MH:";
-            // 
-            // label17_phat
-            // 
-            this.label17_phat.AutoSize = true;
-            this.label17_phat.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label17_phat.Location = new System.Drawing.Point(557, 200);
-            this.label17_phat.Name = "label17_phat";
-            this.label17_phat.Size = new System.Drawing.Size(69, 21);
-            this.label17_phat.TabIndex = 17;
-            this.label17_phat.Text = "H?c k?:";
-            // 
-            // label16_phat
-            // 
-            this.label16_phat.AutoSize = true;
-            this.label16_phat.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label16_phat.Location = new System.Drawing.Point(2, 247);
-            this.label16_phat.Name = "label16_phat";
-            this.label16_phat.Size = new System.Drawing.Size(115, 21);
-            this.label16_phat.TabIndex = 16;
-            this.label16_phat.Text = "Lo?i hình ?T:";
-            // 
-            // label15_phat
-            // 
-            this.label15_phat.AutoSize = true;
-            this.label15_phat.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label15_phat.Location = new System.Drawing.Point(557, 153);
-            this.label15_phat.Name = "label15_phat";
-            this.label15_phat.Size = new System.Drawing.Size(82, 21);
-            this.label15_phat.TabIndex = 15;
-            this.label15_phat.Text = "N?m h?c:";
-            // 
-            // label14_phat
-            // 
-            this.label14_phat.AutoSize = true;
-            this.label14_phat.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label14_phat.Location = new System.Drawing.Point(3, 205);
-            this.label14_phat.Name = "label14_phat";
-            this.label14_phat.Size = new System.Drawing.Size(88, 21);
-            this.label14_phat.TabIndex = 14;
-            this.label14_phat.Text = "Ngôn ng?:";
             // 
             // label13_phat
             // 
