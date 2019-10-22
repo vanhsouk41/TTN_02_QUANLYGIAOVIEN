@@ -162,6 +162,7 @@
             this.DVQL_DA = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Tai_DA = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.button11 = new System.Windows.Forms.Button();
             this.tt_label11_tt = new System.Windows.Forms.Label();
             this.tt_comboBox8_phat = new System.Windows.Forms.ComboBox();
             this.tt_panel2 = new System.Windows.Forms.Panel();
@@ -177,7 +178,6 @@
             this.tt_dataGridView6 = new System.Windows.Forms.DataGridView();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -275,7 +275,7 @@
             // 
             this.textBox6.Location = new System.Drawing.Point(527, 150);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(187, 29);
+            this.textBox6.Size = new System.Drawing.Size(198, 29);
             this.textBox6.TabIndex = 7;
             // 
             // textBox4
@@ -315,7 +315,7 @@
             "Sách"});
             this.comboBox2.Location = new System.Drawing.Point(527, 98);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(187, 29);
+            this.comboBox2.Size = new System.Drawing.Size(198, 29);
             this.comboBox2.TabIndex = 2;
             // 
             // comboBox1
@@ -327,7 +327,7 @@
             "Tên giáo viên"});
             this.comboBox1.Location = new System.Drawing.Point(527, 41);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(187, 29);
+            this.comboBox1.Size = new System.Drawing.Size(198, 29);
             this.comboBox1.TabIndex = 2;
             // 
             // button1
@@ -1520,6 +1520,16 @@
             this.tabPage6.Text = "Tổng tải trong năm học";
             this.tabPage6.UseVisualStyleBackColor = true;
             // 
+            // button11
+            // 
+            this.button11.Location = new System.Drawing.Point(1141, 42);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(121, 29);
+            this.button11.TabIndex = 13;
+            this.button11.Text = "In ra Excel";
+            this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
+            // 
             // tt_label11_tt
             // 
             this.tt_label11_tt.AutoSize = true;
@@ -1670,16 +1680,6 @@
             this.button6.TabIndex = 4;
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
-            // 
-            // button11
-            // 
-            this.button11.Location = new System.Drawing.Point(1141, 42);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(121, 29);
-            this.button11.TabIndex = 13;
-            this.button11.Text = "In ra Excel";
-            this.button11.UseVisualStyleBackColor = true;
-            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // Works_calculating
             // 
