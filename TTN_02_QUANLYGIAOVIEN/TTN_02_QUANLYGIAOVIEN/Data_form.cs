@@ -28,7 +28,23 @@ namespace QUAN_LY_GIAO_VIEN
             Form1 trangchu = new Form1();
             trangchu.Show();
         }
-        
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            DialogResult dr = MessageBox.Show("Bạn thực sự muốn thoát?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dr == DialogResult.Yes)
+            {
+                Environment.Exit(0);
+            }
+
+        }
+
+        private void Data_form_Load(object sender, EventArgs e)
+        {
+            HOATDONGNGHIENCUU hdnc = new HOATDONGNGHIENCUU();
+            hdnc.load_BBKH();
+            dataGridView1.DataSource = hdnc.myDisplayDataTable;
+            dataGridView1.AutoResizeColumns();
         }
 
         private void tabPage9_Click(object sender, EventArgs e)
