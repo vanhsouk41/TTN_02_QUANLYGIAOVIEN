@@ -61,7 +61,20 @@ namespace QUAN_LY_GIAO_VIEN
                             sheet.Cells[i + 2, k] = dgv.Rows[i - 1].Cells[j - 1].Value;
                             sheet.Cells[i + 2, k].Font.Name = "Times New Roman";
                             sheet.Cells[i + 2, k].Borders.Weight = Excel.XlBorderWeight.xlThin;
-        
+                            k++;
+                        }
+                    }
+                    sheet.Columns.AutoFit();
+                    wb.SaveAs(fsave.FileName);
+                    MessageBox.Show("Ghi thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                finally
+                {
+                    app.Quit();
                     wb = null;
                 }
 
