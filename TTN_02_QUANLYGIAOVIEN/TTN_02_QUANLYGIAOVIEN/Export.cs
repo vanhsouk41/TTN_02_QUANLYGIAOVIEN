@@ -49,7 +49,24 @@ namespace QUAN_LY_GIAO_VIEN
                         k++;
                     }
                     // Sinh dữ liệu
-                   
+                    for (int i = 1; i <= dgv.RowCount - 1; i++)
+                    {
+                        if (dgv.Columns[0].Visible == false) continue;
+                        sheet.Cells[i + 2, 1] = dgv.Rows[i - 1].Cells[0].Value;
+                        sheet.Cells[i + 2, 1].Font.Name = "Times New Roman";
+                        sheet.Cells[i + 2, 1].Borders.Weight = Excel.XlBorderWeight.xlThin;
+                        for (int j = 2, k = 2; j <= dgv.Columns.Count; j++)
+                        {
+                            if (dgv.Columns[j - 1].Visible == false) continue;
+                            sheet.Cells[i + 2, k] = dgv.Rows[i - 1].Cells[j - 1].Value;
+                            sheet.Cells[i + 2, k].Font.Name = "Times New Roman";
+                            sheet.Cells[i + 2, k].Borders.Weight = Excel.XlBorderWeight.xlThin;
+                            k++;
+                        }
+                    }
+                    sheet.Columns.AutoFit();
+                    wb.SaveAs(fsave.FileName);
+                    MessageBox.Show("Ghi thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 catch (Exception ex)
                 {
