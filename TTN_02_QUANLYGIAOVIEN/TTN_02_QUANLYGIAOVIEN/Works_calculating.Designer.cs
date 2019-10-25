@@ -995,6 +995,47 @@ namespace QUAN_LY_GIAO_VIEN
             this.label10.Text = "Ch?n ngày th?ng kê: ";
 
 
+            // 
+            // cbBoxNoiDung_KT
+            // 
+            this.cbBoxNoiDung_KT.FormattingEnabled = true;
+            this.cbBoxNoiDung_KT.Items.AddRange(new object[] {
+            "Mã giáo viên",
+            "Tên giáo viên"});
+            this.cbBoxNoiDung_KT.Location = new System.Drawing.Point(293, 37);
+            this.cbBoxNoiDung_KT.Name = "cbBoxNoiDung_KT";
+            this.cbBoxNoiDung_KT.Size = new System.Drawing.Size(197, 21);
+            this.cbBoxNoiDung_KT.TabIndex = 4;
+            // 
+            // lbNamHoc_KT
+            // 
+            this.lbNamHoc_KT.AutoSize = true;
+            this.lbNamHoc_KT.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNamHoc_KT.Location = new System.Drawing.Point(180, 169);
+            this.lbNamHoc_KT.Name = "lbNamHoc_KT";
+            this.lbNamHoc_KT.Size = new System.Drawing.Size(78, 21);
+            this.lbNamHoc_KT.TabIndex = 3;
+            this.lbNamHoc_KT.Text = "N?m h?c";
+            // 
+            // lbTuKhoa_KT
+            // 
+            this.lbTuKhoa_KT.AutoSize = true;
+            this.lbTuKhoa_KT.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTuKhoa_KT.Location = new System.Drawing.Point(180, 102);
+            this.lbTuKhoa_KT.Name = "lbTuKhoa_KT";
+            this.lbTuKhoa_KT.Size = new System.Drawing.Size(73, 21);
+            this.lbTuKhoa_KT.TabIndex = 2;
+            this.lbTuKhoa_KT.Text = "T? khóa";
+            // 
+            // lbNoiDung_KT
+            // 
+            this.lbNoiDung_KT.AutoSize = true;
+            this.lbNoiDung_KT.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNoiDung_KT.Location = new System.Drawing.Point(180, 37);
+            this.lbNoiDung_KT.Name = "lbNoiDung_KT";
+            this.lbNoiDung_KT.Size = new System.Drawing.Size(79, 21);
+            this.lbNoiDung_KT.TabIndex = 1;
+            this.lbNoiDung_KT.Text = "N?i dung";
 
             // 
             // dataGridKhaoThi
@@ -1124,47 +1165,6 @@ namespace QUAN_LY_GIAO_VIEN
             this.tbTuKhoa_KT.Name = "tbTuKhoa_KT";
             this.tbTuKhoa_KT.Size = new System.Drawing.Size(197, 20);
             this.tbTuKhoa_KT.TabIndex = 5;
-            // 
-            // cbBoxNoiDung_KT
-            // 
-            this.cbBoxNoiDung_KT.FormattingEnabled = true;
-            this.cbBoxNoiDung_KT.Items.AddRange(new object[] {
-            "Mã giáo viên",
-            "Tên giáo viên"});
-            this.cbBoxNoiDung_KT.Location = new System.Drawing.Point(293, 37);
-            this.cbBoxNoiDung_KT.Name = "cbBoxNoiDung_KT";
-            this.cbBoxNoiDung_KT.Size = new System.Drawing.Size(197, 21);
-            this.cbBoxNoiDung_KT.TabIndex = 4;
-            // 
-            // lbNamHoc_KT
-            // 
-            this.lbNamHoc_KT.AutoSize = true;
-            this.lbNamHoc_KT.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNamHoc_KT.Location = new System.Drawing.Point(180, 169);
-            this.lbNamHoc_KT.Name = "lbNamHoc_KT";
-            this.lbNamHoc_KT.Size = new System.Drawing.Size(78, 21);
-            this.lbNamHoc_KT.TabIndex = 3;
-            this.lbNamHoc_KT.Text = "N?m h?c";
-            // 
-            // lbTuKhoa_KT
-            // 
-            this.lbTuKhoa_KT.AutoSize = true;
-            this.lbTuKhoa_KT.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTuKhoa_KT.Location = new System.Drawing.Point(180, 102);
-            this.lbTuKhoa_KT.Name = "lbTuKhoa_KT";
-            this.lbTuKhoa_KT.Size = new System.Drawing.Size(73, 21);
-            this.lbTuKhoa_KT.TabIndex = 2;
-            this.lbTuKhoa_KT.Text = "T? khóa";
-            // 
-            // lbNoiDung_KT
-            // 
-            this.lbNoiDung_KT.AutoSize = true;
-            this.lbNoiDung_KT.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNoiDung_KT.Location = new System.Drawing.Point(180, 37);
-            this.lbNoiDung_KT.Name = "lbNoiDung_KT";
-            this.lbNoiDung_KT.Size = new System.Drawing.Size(79, 21);
-            this.lbNoiDung_KT.TabIndex = 1;
-            this.lbNoiDung_KT.Text = "N?i dung";
 
 
 
