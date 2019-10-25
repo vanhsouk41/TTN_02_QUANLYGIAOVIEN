@@ -757,44 +757,6 @@ namespace QUAN_LY_GIAO_VIEN
             this.comboBox5.Size = new System.Drawing.Size(190, 29);
             this.comboBox5.TabIndex = 2;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(271, 45);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(127, 21);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Th?ng kê theo: ";
-            // 
-            // comboBox4
-            // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
-            "Mã giáo viên",
-            "Tên giáo viên"});
-            this.comboBox4.Location = new System.Drawing.Point(434, 42);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(190, 29);
-            this.comboBox4.TabIndex = 0;
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Controls.Add(this.button12_phat);
-            this.tabPage4.Controls.Add(this.panel1);
-            this.tabPage4.Controls.Add(this.dataGridView4);
-            this.tabPage4.Controls.Add(this.label5);
-            this.tabPage4.Controls.Add(this.comboBox7);
-            this.tabPage4.Controls.Add(this.button8);
-            this.tabPage4.Controls.Add(this.label4);
-            this.tabPage4.Controls.Add(this.comboBox6);
-            this.tabPage4.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(1282, 624);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "T?i gi?ng d?y";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
             // button12_phat
             // 
             this.button12_phat.Location = new System.Drawing.Point(1077, 136);
@@ -862,6 +824,47 @@ namespace QUAN_LY_GIAO_VIEN
             this.label6.Size = new System.Drawing.Size(53, 21);
             this.label6.TabIndex = 10;
             this.label6.Text = "label6";
+
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(271, 45);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(127, 21);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Th?ng kê theo: ";
+            // 
+            // comboBox4
+            // 
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Items.AddRange(new object[] {
+            "Mã giáo viên",
+            "Tên giáo viên"});
+            this.comboBox4.Location = new System.Drawing.Point(434, 42);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(190, 29);
+            this.comboBox4.TabIndex = 0;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.button12_phat);
+            this.tabPage4.Controls.Add(this.panel1);
+            this.tabPage4.Controls.Add(this.dataGridView4);
+            this.tabPage4.Controls.Add(this.label5);
+            this.tabPage4.Controls.Add(this.comboBox7);
+            this.tabPage4.Controls.Add(this.button8);
+            this.tabPage4.Controls.Add(this.label4);
+            this.tabPage4.Controls.Add(this.comboBox6);
+            this.tabPage4.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Size = new System.Drawing.Size(1282, 624);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "T?i gi?ng d?y";
+            this.tabPage4.UseVisualStyleBackColor = true;
+
+
             // 
             // dataGridView4
             // 
