@@ -993,6 +993,62 @@ namespace QUAN_LY_GIAO_VIEN
             this.label10.Size = new System.Drawing.Size(169, 21);
             this.label10.TabIndex = 0;
             this.label10.Text = "Ch?n ngày th?ng kê: ";
+
+
+
+            // 
+            // dataGridKhaoThi
+            // 
+            this.dataGridKhaoThi.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridKhaoThi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridKhaoThi.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MaGV_KT,
+            this.HoTen_KT,
+            this.HocPhan,
+            this.HinhThucThi_KT,
+            this.SoLuong_KT,
+            this.Tai_KT});
+            this.dataGridKhaoThi.Location = new System.Drawing.Point(7, 232);
+            this.dataGridKhaoThi.Name = "dataGridKhaoThi";
+            this.dataGridKhaoThi.Size = new System.Drawing.Size(1266, 298);
+            this.dataGridKhaoThi.TabIndex = 0;
+            // 
+            // MaGV_KT
+            // 
+            this.MaGV_KT.DataPropertyName = "MaGV";
+            this.MaGV_KT.HeaderText = "Mã giáo viên";
+            this.MaGV_KT.Name = "MaGV_KT";
+            // 
+            // HoTen_KT
+            // 
+            this.HoTen_KT.DataPropertyName = "HoTen";
+            this.HoTen_KT.HeaderText = "Tên giáo viên";
+            this.HoTen_KT.Name = "HoTen_KT";
+            // 
+            // HocPhan
+            // 
+            this.HocPhan.DataPropertyName = "HocPhan";
+            this.HocPhan.HeaderText = "H?c ph?n";
+            this.HocPhan.Name = "HocPhan";
+            // 
+            // HinhThucThi_KT
+            // 
+            this.HinhThucThi_KT.DataPropertyName = "HinhThucThi";
+            this.HinhThucThi_KT.HeaderText = "Hình th?c thi";
+            this.HinhThucThi_KT.Name = "HinhThucThi_KT";
+            // 
+            // SoLuong_KT
+            // 
+            this.SoLuong_KT.DataPropertyName = "SoLuong";
+            this.SoLuong_KT.HeaderText = "S? l??ng";
+            this.SoLuong_KT.Name = "SoLuong_KT";
+            // 
+            // Tai_KT
+            // 
+            this.Tai_KT.DataPropertyName = "TaiKhaoThi";
+            this.Tai_KT.HeaderText = "T?i";
+            this.Tai_KT.Name = "Tai_KT";
+
             // 
             // tabPageKhaoThi
             // 
@@ -1109,58 +1165,9 @@ namespace QUAN_LY_GIAO_VIEN
             this.lbNoiDung_KT.Size = new System.Drawing.Size(79, 21);
             this.lbNoiDung_KT.TabIndex = 1;
             this.lbNoiDung_KT.Text = "N?i dung";
-            // 
-            // dataGridKhaoThi
-            // 
-            this.dataGridKhaoThi.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridKhaoThi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridKhaoThi.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.MaGV_KT,
-            this.HoTen_KT,
-            this.HocPhan,
-            this.HinhThucThi_KT,
-            this.SoLuong_KT,
-            this.Tai_KT});
-            this.dataGridKhaoThi.Location = new System.Drawing.Point(7, 232);
-            this.dataGridKhaoThi.Name = "dataGridKhaoThi";
-            this.dataGridKhaoThi.Size = new System.Drawing.Size(1266, 298);
-            this.dataGridKhaoThi.TabIndex = 0;
-            // 
-            // MaGV_KT
-            // 
-            this.MaGV_KT.DataPropertyName = "MaGV";
-            this.MaGV_KT.HeaderText = "Mã giáo viên";
-            this.MaGV_KT.Name = "MaGV_KT";
-            // 
-            // HoTen_KT
-            // 
-            this.HoTen_KT.DataPropertyName = "HoTen";
-            this.HoTen_KT.HeaderText = "Tên giáo viên";
-            this.HoTen_KT.Name = "HoTen_KT";
-            // 
-            // HocPhan
-            // 
-            this.HocPhan.DataPropertyName = "HocPhan";
-            this.HocPhan.HeaderText = "H?c ph?n";
-            this.HocPhan.Name = "HocPhan";
-            // 
-            // HinhThucThi_KT
-            // 
-            this.HinhThucThi_KT.DataPropertyName = "HinhThucThi";
-            this.HinhThucThi_KT.HeaderText = "Hình th?c thi";
-            this.HinhThucThi_KT.Name = "HinhThucThi_KT";
-            // 
-            // SoLuong_KT
-            // 
-            this.SoLuong_KT.DataPropertyName = "SoLuong";
-            this.SoLuong_KT.HeaderText = "S? l??ng";
-            this.SoLuong_KT.Name = "SoLuong_KT";
-            // 
-            // Tai_KT
-            // 
-            this.Tai_KT.DataPropertyName = "TaiKhaoThi";
-            this.Tai_KT.HeaderText = "T?i";
-            this.Tai_KT.Name = "Tai_KT";
+
+
+
             // 
             // tabPageHoiDong
             // 
