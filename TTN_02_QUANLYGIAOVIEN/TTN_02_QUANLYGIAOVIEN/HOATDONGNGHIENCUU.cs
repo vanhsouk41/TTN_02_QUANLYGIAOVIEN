@@ -106,32 +106,6 @@ namespace QUAN_LY_GIAO_VIEN
             else result = name + num.ToString();
             return result;
         }
-        public void Delete_BBKH (string MaBB)
-        {
-            SqlCommand delete = conn.CreateCommand();
-            delete.CommandText = "Delete_BBKH";
-            delete.CommandType = CommandType.StoredProcedure;
-            delete.Parameters.Add(new SqlParameter("@MaBB", SqlDbType.Char)).Value = MaBB;
-            conn.Open();
-            delete.ExecuteNonQuery();
-            conn.Close();
-        }
-        public void search_BBKH (string type, string value)
-        {
-            SqlCommand search = conn.CreateCommand();
-            search.CommandText = "SELECT * FROM Search_BBKH (@type, @value)";
-            search.Parameters.Add(new SqlParameter("@type", SqlDbType.NVarChar)).Value = type;
-            search.Parameters.Add(new SqlParameter("@value", SqlDbType.NVarChar)).Value = value;
-            sda.SelectCommand = search;
-            conn.Open();
-            myDataSet = new DataSet();
-            sda.Fill(myDataSet);
-            conn.Close();
-            myDataSet.Tables[0].TableName = "DISPLAY";
-            myDisplayDataTable = new DataTable();
-            myDisplayDataTable = myDataSet.Tables["DISPLAY"];
-        }
-
         public void Insert_BBKH(string MaBB, string TenBB, string LoaiBB, DateTime NgayDang, string TapChi, string Soluongtacgia)
         {
             SqlCommand insert = conn.CreateCommand();
@@ -164,6 +138,33 @@ namespace QUAN_LY_GIAO_VIEN
             update.ExecuteNonQuery();
             conn.Close();
         }
+        public void Delete_BBKH (string MaBB)
+        {
+            SqlCommand delete = conn.CreateCommand();
+            delete.CommandText = "Delete_BBKH";
+            delete.CommandType = CommandType.StoredProcedure;
+            delete.Parameters.Add(new SqlParameter("@MaBB", SqlDbType.Char)).Value = MaBB;
+            conn.Open();
+            delete.ExecuteNonQuery();
+            conn.Close();
+        }
+        public void search_BBKH (string type, string value)
+        {
+            SqlCommand search = conn.CreateCommand();
+            search.CommandText = "SELECT * FROM Search_BBKH (@type, @value)";
+            search.Parameters.Add(new SqlParameter("@type", SqlDbType.NVarChar)).Value = type;
+            search.Parameters.Add(new SqlParameter("@value", SqlDbType.NVarChar)).Value = value;
+            sda.SelectCommand = search;
+            conn.Open();
+            myDataSet = new DataSet();
+            sda.Fill(myDataSet);
+            conn.Close();
+            myDataSet.Tables[0].TableName = "DISPLAY";
+            myDisplayDataTable = new DataTable();
+            myDisplayDataTable = myDataSet.Tables["DISPLAY"];
+        }
+
+
 
 
     }
