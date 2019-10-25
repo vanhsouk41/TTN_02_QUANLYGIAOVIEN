@@ -767,6 +767,35 @@ namespace QUAN_LY_GIAO_VIEN
             this.button12_phat.UseVisualStyleBackColor = true;
             this.button12_phat.Click += new System.EventHandler(this.button12_phat_Click);
             // 
+            // comboBox4
+            // 
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Items.AddRange(new object[] {
+            "Mã giáo viên",
+            "Tên giáo viên"});
+            this.comboBox4.Location = new System.Drawing.Point(434, 42);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(190, 29);
+            this.comboBox4.TabIndex = 0;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.button12_phat);
+            this.tabPage4.Controls.Add(this.panel1);
+            this.tabPage4.Controls.Add(this.dataGridView4);
+            this.tabPage4.Controls.Add(this.label5);
+            this.tabPage4.Controls.Add(this.comboBox7);
+            this.tabPage4.Controls.Add(this.button8);
+            this.tabPage4.Controls.Add(this.label4);
+            this.tabPage4.Controls.Add(this.comboBox6);
+            this.tabPage4.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Size = new System.Drawing.Size(1282, 624);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "T?i gi?ng d?y";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.button9);
@@ -834,35 +863,6 @@ namespace QUAN_LY_GIAO_VIEN
             this.label1.Size = new System.Drawing.Size(127, 21);
             this.label1.TabIndex = 1;
             this.label1.Text = "Th?ng kê theo: ";
-            // 
-            // comboBox4
-            // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
-            "Mã giáo viên",
-            "Tên giáo viên"});
-            this.comboBox4.Location = new System.Drawing.Point(434, 42);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(190, 29);
-            this.comboBox4.TabIndex = 0;
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Controls.Add(this.button12_phat);
-            this.tabPage4.Controls.Add(this.panel1);
-            this.tabPage4.Controls.Add(this.dataGridView4);
-            this.tabPage4.Controls.Add(this.label5);
-            this.tabPage4.Controls.Add(this.comboBox7);
-            this.tabPage4.Controls.Add(this.button8);
-            this.tabPage4.Controls.Add(this.label4);
-            this.tabPage4.Controls.Add(this.comboBox6);
-            this.tabPage4.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(1282, 624);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "T?i gi?ng d?y";
-            this.tabPage4.UseVisualStyleBackColor = true;
 
 
             // 
