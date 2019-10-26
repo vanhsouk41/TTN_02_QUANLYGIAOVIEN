@@ -363,7 +363,203 @@
             // 
             // textBox16_phat
             // 
-            
+            this.textBox16_phat.Location = new System.Drawing.Point(123, 244);
+            this.textBox16_phat.Name = "textBox16_phat";
+            this.textBox16_phat.Size = new System.Drawing.Size(126, 29);
+            this.textBox16_phat.TabIndex = 2;
+            // 
+            // textBox15_phat
+            // 
+            this.textBox15_phat.Location = new System.Drawing.Point(123, 150);
+            this.textBox15_phat.Name = "textBox15_phat";
+            this.textBox15_phat.Size = new System.Drawing.Size(361, 29);
+            this.textBox15_phat.TabIndex = 1;
+            // 
+            // textBox14_phat
+            // 
+            this.textBox14_phat.Location = new System.Drawing.Point(123, 10);
+            this.textBox14_phat.Name = "textBox14_phat";
+            this.textBox14_phat.Size = new System.Drawing.Size(126, 29);
+            this.textBox14_phat.TabIndex = 0;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.textBox9_phat);
+            this.panel1.Controls.Add(this.comboBox3_phat);
+            this.panel1.Controls.Add(this.button11_LHP);
+            this.panel1.Controls.Add(this.label8);
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Location = new System.Drawing.Point(6, 137);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(207, 489);
+            this.panel1.TabIndex = 0;
+            // 
+            // textBox9_phat
+            // 
+            this.textBox9_phat.Location = new System.Drawing.Point(82, 148);
+            this.textBox9_phat.Name = "textBox9_phat";
+            this.textBox9_phat.Size = new System.Drawing.Size(110, 29);
+            this.textBox9_phat.TabIndex = 3;
+            // 
+            // comboBox3_phat
+            // 
+            this.comboBox3_phat.FormattingEnabled = true;
+            this.comboBox3_phat.Items.AddRange(new object[] {
+            "Mã lớp",
+            "Tên lớp"});
+            this.comboBox3_phat.Location = new System.Drawing.Point(88, 90);
+            this.comboBox3_phat.Name = "comboBox3_phat";
+            this.comboBox3_phat.Size = new System.Drawing.Size(104, 29);
+            this.comboBox3_phat.TabIndex = 2;
+            // 
+            // button11_LHP
+            // 
+            this.button11_LHP.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.button11_LHP.Location = new System.Drawing.Point(60, 243);
+            this.button11_LHP.Name = "button11_LHP";
+            this.button11_LHP.Size = new System.Drawing.Size(101, 30);
+            this.button11_LHP.TabIndex = 0;
+            this.button11_LHP.Text = "Tìm kiếm";
+            this.button11_LHP.UseVisualStyleBackColor = true;
+            this.button11_LHP.Click += new System.EventHandler(this.button11_LHP_Click);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.label8.Location = new System.Drawing.Point(3, 151);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(73, 21);
+            this.label8.TabIndex = 1;
+            this.label8.Text = "Từ khóa";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.label7.Location = new System.Drawing.Point(3, 90);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(79, 21);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "Tìm theo";
+            // 
+            // tabPage9
+            // 
+            this.tabPage9.Controls.Add(this.groupBox1);
+            this.tabPage9.Controls.Add(this.groupBox3);
+            this.tabPage9.Controls.Add(this.groupBox2);
+            this.tabPage9.Controls.Add(this.button4);
+            this.tabPage9.Controls.Add(this.label2);
+            this.tabPage9.Controls.Add(this.textBox4);
+            this.tabPage9.Controls.Add(this.dataGridView1);
+            this.tabPage9.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPage9.Location = new System.Drawing.Point(4, 22);
+            this.tabPage9.Name = "tabPage9";
+            this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage9.Size = new System.Drawing.Size(1346, 634);
+            this.tabPage9.TabIndex = 8;
+            this.tabPage9.Text = "Bài báo khoa học";
+            this.tabPage9.UseVisualStyleBackColor = true;
+            this.tabPage9.Click += new System.EventHandler(this.tabPage9_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.textBox11);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.button9);
+            this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(6, 83);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(199, 543);
+            this.groupBox1.TabIndex = 15;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Tìm kiếm";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Tên tạp chí",
+            "Tên bài báo"});
+            this.comboBox1.Location = new System.Drawing.Point(83, 93);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(102, 27);
+            this.comboBox1.TabIndex = 3;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(13, 137);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(61, 19);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Từ khóa";
+            // 
+            // textBox11
+            // 
+            this.textBox11.Location = new System.Drawing.Point(83, 136);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(102, 26);
+            this.textBox11.TabIndex = 1;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(13, 96);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(62, 19);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Tìm theo";
+            // 
+            // button9
+            // 
+            this.button9.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.Location = new System.Drawing.Point(26, 195);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(159, 30);
+            this.button9.TabIndex = 0;
+            this.button9.Text = "Tìm kiếm";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.button8);
+            this.groupBox3.Controls.Add(this.button7);
+            this.groupBox3.Controls.Add(this.button6);
+            this.groupBox3.Controls.Add(this.button5);
+            this.groupBox3.Controls.Add(this.button3);
+            this.groupBox3.Location = new System.Drawing.Point(1136, 292);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(200, 334);
+            this.groupBox3.TabIndex = 14;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Chức năng";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.comboBox2);
+            this.groupBox2.Controls.Add(this.textBox1);
+            this.groupBox2.Controls.Add(this.textBox2);
+            this.groupBox2.Controls.Add(this.textBox3);
+            this.groupBox2.Controls.Add(this.dateTimePicker1);
+            this.groupBox2.Controls.Add(this.textBox5);
+            this.groupBox2.Controls.Add(this.textBox10);
+            this.groupBox2.Controls.Add(this.textBox6);
+            this.groupBox2.Controls.Add(this.textBox13);
+            this.groupBox2.Controls.Add(this.textBox7);
+            this.groupBox2.Controls.Add(this.textBox12);
+            this.groupBox2.Controls.Add(this.textBox8);
+            this.groupBox2.Location = new System.Drawing.Point(211, 292);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(908, 336);
+            this.groupBox2.TabIndex = 13;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Thông tin";
             // 
             // comboBox2
             // 
