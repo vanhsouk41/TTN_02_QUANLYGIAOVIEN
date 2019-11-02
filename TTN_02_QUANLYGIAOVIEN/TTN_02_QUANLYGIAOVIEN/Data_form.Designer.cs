@@ -1,50 +1,8 @@
-﻿namespace QUAN_LY_GIAO_VIEN
+namespace QUAN_LY_GIAO_VIEN
 {
     partial class Data_form
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
-        private System.ComponentModel.IContainer components = null;
-
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing && (components != null))
-            {
-                components.Dispose();
-            }
-            base.Dispose(disposing);
-        }
-
-        #region Windows Form Designer generated code
-
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
-        private void InitializeComponent()
-        {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.label1 = new System.Windows.Forms.Label();
-            this.phat1 = new System.Windows.Forms.TabPage();
-            this.button11 = new System.Windows.Forms.Button();
-            this.label6_phat = new System.Windows.Forms.Label();
-            this.lop_hp_datagitview = new System.Windows.Forms.DataGridView();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label18_phat = new System.Windows.Forms.Label();
-            this.label17_phat = new System.Windows.Forms.Label();
-            this.label16_phat = new System.Windows.Forms.Label();
-            this.label15_phat = new System.Windows.Forms.Label();
-            this.label14_phat = new System.Windows.Forms.Label();
-            this.label13_phat = new System.Windows.Forms.Label();
-            this.label12_phat = new System.Windows.Forms.Label();
-            this.label11_phat = new System.Windows.Forms.Label();
-            this.label9_phat = new System.Windows.Forms.Label();
+                    this.label9_phat = new System.Windows.Forms.Label();
             this.textBox22_phat = new System.Windows.Forms.TextBox();
             this.textBox21_phat = new System.Windows.Forms.TextBox();
             this.textBox20_phat = new System.Windows.Forms.TextBox();
@@ -141,7 +99,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(616, 42);
             this.label1.TabIndex = 2;
-            this.label1.Text = "QUẢN LÝ THÔNG TIN GIÁO VIÊN";
+            this.label1.Text = "QU?N L� TH�NG TIN GI�O VI�N";
             // 
             // phat1
             // 
@@ -158,7 +116,7 @@
             this.phat1.Padding = new System.Windows.Forms.Padding(3);
             this.phat1.Size = new System.Drawing.Size(1346, 634);
             this.phat1.TabIndex = 10;
-            this.phat1.Text = "Lớp học phần";
+            this.phat1.Text = "L?p h?c ph?n";
             this.phat1.UseVisualStyleBackColor = true;
             // 
             // button11
@@ -180,7 +138,7 @@
             this.label6_phat.Name = "label6_phat";
             this.label6_phat.Size = new System.Drawing.Size(217, 33);
             this.label6_phat.TabIndex = 4;
-            this.label6_phat.Text = "LỚP HỌC PHẦN";
+            this.label6_phat.Text = "L?P H?C PH?N";
             // 
             // lop_hp_datagitview
             // 
@@ -247,7 +205,7 @@
             this.label17_phat.Name = "label17_phat";
             this.label17_phat.Size = new System.Drawing.Size(69, 21);
             this.label17_phat.TabIndex = 17;
-            this.label17_phat.Text = "Học kỳ:";
+            this.label17_phat.Text = "H?c k?:";
             // 
             // label16_phat
             // 
@@ -257,7 +215,7 @@
             this.label16_phat.Name = "label16_phat";
             this.label16_phat.Size = new System.Drawing.Size(115, 21);
             this.label16_phat.TabIndex = 16;
-            this.label16_phat.Text = "Loại hình ĐT:";
+            this.label16_phat.Text = "Lo?i h�nh ?T:";
             // 
             // label15_phat
             // 
@@ -267,7 +225,7 @@
             this.label15_phat.Name = "label15_phat";
             this.label15_phat.Size = new System.Drawing.Size(82, 21);
             this.label15_phat.TabIndex = 15;
-            this.label15_phat.Text = "Năm học:";
+            this.label15_phat.Text = "N?m h?c:";
             // 
             // label14_phat
             // 
@@ -277,7 +235,7 @@
             this.label14_phat.Name = "label14_phat";
             this.label14_phat.Size = new System.Drawing.Size(88, 21);
             this.label14_phat.TabIndex = 14;
-            this.label14_phat.Text = "Ngôn ngữ:";
+            this.label14_phat.Text = "Ng�n ng?:";
             // 
             // label13_phat
             // 
@@ -287,7 +245,7 @@
             this.label13_phat.Name = "label13_phat";
             this.label13_phat.Size = new System.Drawing.Size(76, 21);
             this.label13_phat.TabIndex = 13;
-            this.label13_phat.Text = "Loại HP:";
+            this.label13_phat.Text = "Lo?i HP:";
             // 
             // label12_phat
             // 
@@ -297,7 +255,7 @@
             this.label12_phat.Name = "label12_phat";
             this.label12_phat.Size = new System.Drawing.Size(54, 21);
             this.label12_phat.TabIndex = 12;
-            this.label12_phat.Text = "Sĩ số:";
+            this.label12_phat.Text = "S? s?:";
             // 
             // label11_phat
             // 
@@ -307,7 +265,7 @@
             this.label11_phat.Name = "label11_phat";
             this.label11_phat.Size = new System.Drawing.Size(72, 21);
             this.label11_phat.TabIndex = 11;
-            this.label11_phat.Text = "Tên lớp:";
+            this.label11_phat.Text = "T�n l?p:";
             // 
             // label9_phat
             // 
@@ -317,7 +275,7 @@
             this.label9_phat.Name = "label9_phat";
             this.label9_phat.Size = new System.Drawing.Size(67, 21);
             this.label9_phat.TabIndex = 9;
-            this.label9_phat.Text = "Ma lớp:";
+            this.label9_phat.Text = "Ma l?p:";
             // 
             // textBox22_phat
             // 
@@ -405,8 +363,8 @@
             // 
             this.comboBox3_phat.FormattingEnabled = true;
             this.comboBox3_phat.Items.AddRange(new object[] {
-            "Mã lớp",
-            "Tên lớp"});
+            "M� l?p",
+            "T�n l?p"});
             this.comboBox3_phat.Location = new System.Drawing.Point(88, 90);
             this.comboBox3_phat.Name = "comboBox3_phat";
             this.comboBox3_phat.Size = new System.Drawing.Size(104, 29);
@@ -419,7 +377,7 @@
             this.button11_LHP.Name = "button11_LHP";
             this.button11_LHP.Size = new System.Drawing.Size(101, 30);
             this.button11_LHP.TabIndex = 0;
-            this.button11_LHP.Text = "Tìm kiếm";
+            this.button11_LHP.Text = "T�m ki?m";
             this.button11_LHP.UseVisualStyleBackColor = true;
             this.button11_LHP.Click += new System.EventHandler(this.button11_LHP_Click);
             // 
@@ -431,7 +389,7 @@
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(73, 21);
             this.label8.TabIndex = 1;
-            this.label8.Text = "Từ khóa";
+            this.label8.Text = "T? kh�a";
             // 
             // label7
             // 
@@ -441,7 +399,7 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(79, 21);
             this.label7.TabIndex = 0;
-            this.label7.Text = "Tìm theo";
+            this.label7.Text = "T�m theo";
             // 
             // tabPage9
             // 
@@ -458,7 +416,7 @@
             this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage9.Size = new System.Drawing.Size(1346, 634);
             this.tabPage9.TabIndex = 8;
-            this.tabPage9.Text = "Bài báo khoa học";
+            this.tabPage9.Text = "B�i b�o khoa h?c";
             this.tabPage9.UseVisualStyleBackColor = true;
             this.tabPage9.Click += new System.EventHandler(this.tabPage9_Click);
             // 
@@ -475,14 +433,14 @@
             this.groupBox1.Size = new System.Drawing.Size(199, 543);
             this.groupBox1.TabIndex = 15;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Tìm kiếm";
+            this.groupBox1.Text = "T�m ki?m";
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "Tên tạp chí",
-            "Tên bài báo"});
+            "T�n t?p ch�",
+            "T�n b�i b�o"});
             this.comboBox1.Location = new System.Drawing.Point(83, 93);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(102, 27);
@@ -496,7 +454,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(61, 19);
             this.label4.TabIndex = 2;
-            this.label4.Text = "Từ khóa";
+            this.label4.Text = "T? kh�a";
             // 
             // textBox11
             // 
@@ -513,7 +471,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(62, 19);
             this.label3.TabIndex = 0;
-            this.label3.Text = "Tìm theo";
+            this.label3.Text = "T�m theo";
             // 
             // button9
             // 
@@ -522,7 +480,7 @@
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(159, 30);
             this.button9.TabIndex = 0;
-            this.button9.Text = "Tìm kiếm";
+            this.button9.Text = "T�m ki?m";
             this.button9.UseVisualStyleBackColor = true;
             this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
@@ -538,7 +496,7 @@
             this.groupBox3.Size = new System.Drawing.Size(200, 334);
             this.groupBox3.TabIndex = 14;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Chức năng";
+            this.groupBox3.Text = "Ch?c n?ng";
             // 
             // groupBox2
             // 
@@ -559,16 +517,16 @@
             this.groupBox2.Size = new System.Drawing.Size(908, 336);
             this.groupBox2.TabIndex = 13;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Thông tin";
+            this.groupBox2.Text = "Th�ng tin";
             // 
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
-            "Đăng trong kỷ yếu NCKH trong nước",
-            "Đăng trên tạp chí KHCN trong nước ISSN",
-            "Đăng trong kỷ yêu NCKH quốc tế",
-            "Đăng trên tạp chí KHCN quốc tế ISI"});
+            "??ng trong k? y?u NCKH trong n??c",
+            "??ng tr�n t?p ch� KHCN trong n??c ISSN",
+            "??ng trong k? y�u NCKH qu?c t?",
+            "??ng tr�n t?p ch� KHCN qu?c t? ISI"});
             this.comboBox2.Location = new System.Drawing.Point(136, 174);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(230, 27);
@@ -582,7 +540,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 19);
             this.textBox1.TabIndex = 1;
-            this.textBox1.Text = "Mã bài báo";
+            this.textBox1.Text = "M� b�i b�o";
             // 
             // textBox2
             // 
@@ -592,7 +550,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 19);
             this.textBox2.TabIndex = 1;
-            this.textBox2.Text = "Tên bài báo";
+            this.textBox2.Text = "T�n b�i b�o";
             // 
             // textBox3
             // 
@@ -602,7 +560,7 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 19);
             this.textBox3.TabIndex = 1;
-            this.textBox3.Text = "Loại bài báo";
+            this.textBox3.Text = "Lo?i b�i b�o";
             // 
             // dateTimePicker1
             // 
@@ -628,7 +586,7 @@
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(100, 19);
             this.textBox10.TabIndex = 8;
-            this.textBox10.Text = "Số lượng tác giả";
+            this.textBox10.Text = "S? l??ng t�c gi?";
             // 
             // textBox6
             // 
@@ -654,7 +612,7 @@
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(100, 19);
             this.textBox7.TabIndex = 5;
-            this.textBox7.Text = "Ngày đăng";
+            this.textBox7.Text = "Ng�y ??ng";
             // 
             // textBox12
             // 
@@ -672,7 +630,7 @@
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(100, 19);
             this.textBox8.TabIndex = 6;
-            this.textBox8.Text = "Tạp chí";
+            this.textBox8.Text = "T?p ch�";
             // 
             // button4
             // 
@@ -693,7 +651,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(473, 32);
             this.label2.TabIndex = 11;
-            this.label2.Text = "THỐNG TIN BÀI BÁO KHOA HỌC";
+            this.label2.Text = "TH?NG TIN B�I B�O KHOA H?C";
             // 
             // textBox4
             // 
@@ -731,7 +689,7 @@
             // MaBB
             // 
             this.MaBB.DataPropertyName = "MaBB";
-            this.MaBB.HeaderText = "Mã bài báo";
+            this.MaBB.HeaderText = "M� b�i b�o";
             this.MaBB.Name = "MaBB";
             this.MaBB.ReadOnly = true;
             this.MaBB.Width = 181;
@@ -739,7 +697,7 @@
             // TenBB
             // 
             this.TenBB.DataPropertyName = "TenBB";
-            this.TenBB.HeaderText = "Tên bài báo";
+            this.TenBB.HeaderText = "T�n b�i b�o";
             this.TenBB.Name = "TenBB";
             this.TenBB.ReadOnly = true;
             this.TenBB.Width = 180;
@@ -747,7 +705,7 @@
             // LoaiBB
             // 
             this.LoaiBB.DataPropertyName = "LoaiBB";
-            this.LoaiBB.HeaderText = "Loại bài báo";
+            this.LoaiBB.HeaderText = "Lo?i b�i b�o";
             this.LoaiBB.Name = "LoaiBB";
             this.LoaiBB.ReadOnly = true;
             this.LoaiBB.Width = 181;
@@ -755,7 +713,7 @@
             // NgayDang
             // 
             this.NgayDang.DataPropertyName = "NgayDang";
-            this.NgayDang.HeaderText = "Ngày đăng";
+            this.NgayDang.HeaderText = "Ng�y ??ng";
             this.NgayDang.Name = "NgayDang";
             this.NgayDang.ReadOnly = true;
             this.NgayDang.Width = 181;
@@ -763,7 +721,7 @@
             // TapChi
             // 
             this.TapChi.DataPropertyName = "TapChi";
-            this.TapChi.HeaderText = "Tạp chí";
+            this.TapChi.HeaderText = "T?p ch�";
             this.TapChi.Name = "TapChi";
             this.TapChi.ReadOnly = true;
             this.TapChi.Width = 180;
@@ -771,7 +729,7 @@
             // Soluongtacgia
             // 
             this.Soluongtacgia.DataPropertyName = "Soluongtacgia";
-            this.Soluongtacgia.HeaderText = "Số lượng tác giả";
+            this.Soluongtacgia.HeaderText = "S? l??ng t�c gi?";
             this.Soluongtacgia.Name = "Soluongtacgia";
             this.Soluongtacgia.ReadOnly = true;
             this.Soluongtacgia.Width = 181;
@@ -799,7 +757,7 @@
             this.tabPageChucVu.Padding = new System.Windows.Forms.Padding(3);
             this.tabPageChucVu.Size = new System.Drawing.Size(1346, 634);
             this.tabPageChucVu.TabIndex = 11;
-            this.tabPageChucVu.Text = "Thống kê chức vụ";
+            this.tabPageChucVu.Text = "Th?ng k� ch?c v?";
             this.tabPageChucVu.UseVisualStyleBackColor = true;
             // 
             // lbThoiGian_CV
@@ -810,7 +768,7 @@
             this.lbThoiGian_CV.Name = "lbThoiGian_CV";
             this.lbThoiGian_CV.Size = new System.Drawing.Size(80, 21);
             this.lbThoiGian_CV.TabIndex = 0;
-            this.lbThoiGian_CV.Text = "Thời gian";
+            this.lbThoiGian_CV.Text = "Th?i gian";
             // 
             // dateTimePickerCV
             // 
@@ -826,7 +784,7 @@
             this.btThongKe_CV.Name = "btThongKe_CV";
             this.btThongKe_CV.Size = new System.Drawing.Size(121, 33);
             this.btThongKe_CV.TabIndex = 2;
-            this.btThongKe_CV.Text = "Thống kê";
+            this.btThongKe_CV.Text = "Th?ng k�";
             this.btThongKe_CV.UseVisualStyleBackColor = true;
             this.btThongKe_CV.Click += new System.EventHandler(this.btThongKe_CV_Click);
             // 
@@ -852,43 +810,43 @@
             // MaGV
             // 
             this.MaGV.DataPropertyName = "MaGV";
-            this.MaGV.HeaderText = "Mã giáo viên";
+            this.MaGV.HeaderText = "M� gi�o vi�n";
             this.MaGV.Name = "MaGV";
             // 
             // HoTen
             // 
             this.HoTen.DataPropertyName = "HoTen";
-            this.HoTen.HeaderText = "Họ tên";
+            this.HoTen.HeaderText = "H? t�n";
             this.HoTen.Name = "HoTen";
             // 
             // ChucVu
             // 
             this.ChucVu.DataPropertyName = "ChucVu";
-            this.ChucVu.HeaderText = "Chức vụ";
+            this.ChucVu.HeaderText = "Ch?c v?";
             this.ChucVu.Name = "ChucVu";
             // 
             // TG_BatDau
             // 
             this.TG_BatDau.DataPropertyName = "TG_BatDau";
-            this.TG_BatDau.HeaderText = "Thời gian bắt đầu";
+            this.TG_BatDau.HeaderText = "Th?i gian b?t ??u";
             this.TG_BatDau.Name = "TG_BatDau";
             // 
             // TG_KetThuc
             // 
             this.TG_KetThuc.DataPropertyName = "TG_KetThuc";
-            this.TG_KetThuc.HeaderText = "Thời gian kết thúc";
+            this.TG_KetThuc.HeaderText = "Th?i gian k?t th�c";
             this.TG_KetThuc.Name = "TG_KetThuc";
             // 
             // DonVi
             // 
             this.DonVi.DataPropertyName = "DonVi";
-            this.DonVi.HeaderText = "Đơn vị bổ nhiệm";
+            this.DonVi.HeaderText = "??n v? b? nhi?m";
             this.DonVi.Name = "DonVi";
             // 
             // button2
             // 
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button2.Image = global::QUAN_LY_GIAO_VIEN.Properties.Resources.tải_xuống__1_;
+            this.button2.Image = global::QUAN_LY_GIAO_VIEN.Properties.Resources.t?i_xu?ng__1_;
             this.button2.Location = new System.Drawing.Point(1234, -1);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(132, 114);
@@ -924,7 +882,7 @@
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(159, 43);
             this.button8.TabIndex = 0;
-            this.button8.Text = "Hủy";
+            this.button8.Text = "H?y";
             this.button8.UseVisualStyleBackColor = true;
             this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
@@ -936,7 +894,7 @@
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(159, 46);
             this.button7.TabIndex = 0;
-            this.button7.Text = "Lưu";
+            this.button7.Text = "L?u";
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
@@ -948,7 +906,7 @@
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(159, 46);
             this.button6.TabIndex = 0;
-            this.button6.Text = "Xóa";
+            this.button6.Text = "X�a";
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
@@ -960,7 +918,7 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(159, 46);
             this.button5.TabIndex = 0;
-            this.button5.Text = "Sửa";
+            this.button5.Text = "S?a";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
@@ -972,7 +930,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(159, 45);
             this.button3.TabIndex = 0;
-            this.button3.Text = "Thêm";
+            this.button3.Text = "Th�m";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -984,7 +942,7 @@
             this.button11_phat.Name = "button11_phat";
             this.button11_phat.Size = new System.Drawing.Size(159, 43);
             this.button11_phat.TabIndex = 1;
-            this.button11_phat.Text = "Hủy";
+            this.button11_phat.Text = "H?y";
             this.button11_phat.UseVisualStyleBackColor = true;
             this.button11_phat.Click += new System.EventHandler(this.button11_phat_Click);
             // 
@@ -996,7 +954,7 @@
             this.button12_phat.Name = "button12_phat";
             this.button12_phat.Size = new System.Drawing.Size(159, 46);
             this.button12_phat.TabIndex = 2;
-            this.button12_phat.Text = "Lưu";
+            this.button12_phat.Text = "L?u";
             this.button12_phat.UseVisualStyleBackColor = true;
             this.button12_phat.Click += new System.EventHandler(this.button12_phat_Click);
             // 
@@ -1008,7 +966,7 @@
             this.button13_phat.Name = "button13_phat";
             this.button13_phat.Size = new System.Drawing.Size(159, 46);
             this.button13_phat.TabIndex = 3;
-            this.button13_phat.Text = "Xóa";
+            this.button13_phat.Text = "X�a";
             this.button13_phat.UseVisualStyleBackColor = true;
             this.button13_phat.Click += new System.EventHandler(this.button13_phat_Click);
             // 
@@ -1020,7 +978,7 @@
             this.button14_phat.Name = "button14_phat";
             this.button14_phat.Size = new System.Drawing.Size(159, 46);
             this.button14_phat.TabIndex = 4;
-            this.button14_phat.Text = "Sửa";
+            this.button14_phat.Text = "S?a";
             this.button14_phat.UseVisualStyleBackColor = true;
             this.button14_phat.Click += new System.EventHandler(this.button14_phat_Click);
             // 
@@ -1032,7 +990,7 @@
             this.button15_phat.Name = "button15_phat";
             this.button15_phat.Size = new System.Drawing.Size(159, 45);
             this.button15_phat.TabIndex = 5;
-            this.button15_phat.Text = "Thêm";
+            this.button15_phat.Text = "Th�m";
             this.button15_phat.UseVisualStyleBackColor = true;
             this.button15_phat.Click += new System.EventHandler(this.button15_phat_Click);
             // 
@@ -1048,7 +1006,7 @@
             this.Controls.Add(this.QL_dulieu);
             this.Name = "Data_form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Quản lý thông tin";
+            this.Text = "Qu?n l� th�ng tin";
             this.Load += new System.EventHandler(this.Data_form_Load);
             this.phat1.ResumeLayout(false);
             this.phat1.PerformLayout();
