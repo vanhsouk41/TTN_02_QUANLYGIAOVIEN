@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -29,83 +29,7 @@ namespace QUAN_LY_GIAO_VIEN
             trangchu.Show();
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            DialogResult dr = MessageBox.Show("Bạn thực sự muốn thoát?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (dr == DialogResult.Yes)
-            {
-                Environment.Exit(0);
-            }
-
-        }
-
-        private void Data_form_Load(object sender, EventArgs e)
-        {
-            HOATDONGNGHIENCUU hdnc = new HOATDONGNGHIENCUU();
-            hdnc.load_BBKH();
-            dataGridView1.DataSource = hdnc.myDisplayDataTable;
-            dataGridView1.AutoResizeColumns();
-        }
-
-        private void tabPage9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-
-        private void QL_dulieu_selected(object sender, EventArgs e)
-        {
-            if (QL_dulieu.SelectedIndex == 0)
-            {
-                HOATDONGNGHIENCUU hdnc = new HOATDONGNGHIENCUU();
-                hdnc.load_BBKH();
-                dataGridView1.DataSource = hdnc.myDisplayDataTable;
-                dataGridView1.AutoResizeColumns();
-            }
-
-            ///PHÁT VIẾT
-            if (QL_dulieu.SelectedIndex == 1)
-            {
-                load_data_LHP();
-            }
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            HOATDONGNGHIENCUU hdnc = new HOATDONGNGHIENCUU();
-            button3.Enabled = true;
-            button5.Enabled = false;
-            button6.Enabled = false;
-            button7.Enabled = true;
-            button8.Enabled = true;
-            textBox5.Text = hdnc.AutoGenerateMaBBKH();
-            textBox5.Enabled = false;
-            textBox6.Text = "";
-            textBox12.Text = "";
-            textBox13.Text = "";
-            textBox6.Enabled = true;
-            comboBox2.Enabled = true;
-            dateTimePicker1.Enabled = true;
-            textBox13.Enabled = true;
-            textBox12.Enabled = true;
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            button3.Enabled = false;
-            button5.Enabled = true;
-            button6.Enabled = false;
-            button7.Enabled = true;
-            button8.Enabled = true;
-            textBox5.ReadOnly = true;
-            textBox6.Enabled = true;
-            comboBox2.Enabled = true;
-            dateTimePicker1.Enabled = true;
-            textBox13.Enabled = true;
-            textBox12.Enabled = true;
-        }
-
-        private void button7_Click(object sender, EventArgs e)
+                private void button7_Click(object sender, EventArgs e)
         {
             HOATDONGNGHIENCUU hdnc = new HOATDONGNGHIENCUU();
             string MaBB = textBox5.Text;
@@ -135,14 +59,14 @@ namespace QUAN_LY_GIAO_VIEN
             if (button3.Enabled == true)
             {
                 hdnc.Insert_BBKH(MaBB, TenBB, LoaiBB, NgayDang, TapChi, Soluongtacgia);
-                MessageBox.Show("Success!", "Thông báo", MessageBoxButtons.OK);
+                MessageBox.Show("Success!", "Th�ng b�o", MessageBoxButtons.OK);
             }
 
             if (button5.Enabled == true)
             {
 
                 hdnc.Update_BBKH(MaBB, TenBB, LoaiBB, NgayDang, TapChi, Soluongtacgia);
-                MessageBox.Show("Success!", "Thông báo", MessageBoxButtons.OK);
+                MessageBox.Show("Success!", "Th�ng b�o", MessageBoxButtons.OK);
             }
         }
 
@@ -160,12 +84,12 @@ namespace QUAN_LY_GIAO_VIEN
             button7.Enabled = true;
             button8.Enabled = true;
         }
-        // Nhấn chọn In excel
+        // Nh?n ch?n In excel
         private void button4_Click(object sender, EventArgs e)
         {
-            Export.ExportFile("DANH SÁCH BÀI BÁO KHOA HỌC", dataGridView1);
+            Export.ExportFile("DANH S�CH B�I B�O KHOA H?C", dataGridView1);
         }
-        // Nhấn chọn 1 dòng
+        // Nh?n ch?n 1 d�ng
         private void row_selected(object sender, DataGridViewCellEventArgs e)
         {
             textBox5.Text = dataGridView1.CurrentRow.Cells["MaBB"].Value.ToString();
@@ -180,15 +104,15 @@ namespace QUAN_LY_GIAO_VIEN
             textBox12.Enabled = false;
             dateTimePicker1.Enabled = false;
         }
-        // Xóa
+        // X�a
         private void button6_Click(object sender, EventArgs e)
         {
             HOATDONGNGHIENCUU hdnc = new HOATDONGNGHIENCUU();
             string MaBB = textBox5.Text;
             hdnc.Delete_BBKH(MaBB);
-            MessageBox.Show("Success!", "Thông báo", MessageBoxButtons.OK);
+            MessageBox.Show("Success!", "Th�ng b�o", MessageBoxButtons.OK);
         }
-        // Tìm kiếm bài báo khoa học
+        // T�m ki?m b�i b�o khoa h?c
         private void button9_Click(object sender, EventArgs e)
         {
             string type = comboBox1.Text;
@@ -199,7 +123,7 @@ namespace QUAN_LY_GIAO_VIEN
             dataGridView1.AutoResizeColumns();
         }
 
-        ///Phát viết
+        ///Ph�t vi?t
         ///
 
         public void load_data_LHP()
@@ -253,7 +177,7 @@ namespace QUAN_LY_GIAO_VIEN
             panel2.Enabled = false;
 
         }
-        ///Phát viết
+        ///Ph�t vi?t
         private void button15_phat_Click(object sender, EventArgs e)
         {
             textBox14_phat.Text = "";
@@ -271,10 +195,10 @@ namespace QUAN_LY_GIAO_VIEN
             Data_form.xoa = 0;
             panel2.Enabled = true;
         }
-        ///Phát viết
+        ///Ph�t vi?t
         private void button12_phat_Click(object sender, EventArgs e)
         {
-            DialogResult res = MessageBox.Show("Bạn có muốn lưu kết quả?", "MediaM", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+            DialogResult res = MessageBox.Show("B?n c� mu?n l?u k?t qu??", "MediaM", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
             if (res == DialogResult.OK)
             {
                 string query = "";
@@ -331,7 +255,7 @@ namespace QUAN_LY_GIAO_VIEN
                 //not event
             }
         }
-        ///Phát viết
+        ///Ph�t vi?t
         private void button14_phat_Click(object sender, EventArgs e)
         {
             panel2.Enabled = true;
@@ -340,7 +264,7 @@ namespace QUAN_LY_GIAO_VIEN
             Data_form.xoa = 0;
             textBox14_phat.Enabled = false;
         }
-        ///Phát viết
+        ///Ph�t vi?t
         private void button13_phat_Click(object sender, EventArgs e)
         {
             Data_form.them = 0;
@@ -369,10 +293,10 @@ namespace QUAN_LY_GIAO_VIEN
            // deleteSV.BackColor = Color.DimGray;
             
         }
-        /// Phát viết
+        /// Ph�t vi?t
         private void button11_phat_Click(object sender, EventArgs e)
         {
-            DialogResult res = MessageBox.Show("Bạn có muốn hủy?", "MediaM", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+            DialogResult res = MessageBox.Show("B?n c� mu?n h?y?", "MediaM", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
             if (res == DialogResult.OK)
             {
                 string query = "SELECT * FROM  dbo.LOPHOCPHAN";
@@ -430,7 +354,7 @@ namespace QUAN_LY_GIAO_VIEN
 
         private void button11_Click(object sender, EventArgs e)
         {
-            Export.ExportFile("DANH SÁCH LỚP HỌC PHẦN", lop_hp_datagitview);
+            Export.ExportFile("DANH S�CH L?P H?C PH?N", lop_hp_datagitview);
         }
 
         private void btThongKe_CV_Click(object sender, EventArgs e)
