@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,12 +23,12 @@ namespace QUAN_LY_GIAO_VIEN
             return conn;
         }
 
-        // Phần mở kết nối tới CSDL
+        // Ph?n m? k?t n?i t?i CSDL
         public static void OpenConnection()
         {
             string sql = @"Server = DESKTOP-2LM6C8U\SQLSERVER; Database = QUAN_LY_GIAO_VIEN; Integrated Security = True;";
             try
-            { // Mở kết nối tới CSDL
+            { // M? k?t n?i t?i CSDL
                 conn = new SqlConnection(sql);
                 conn.Open();
             }
@@ -38,29 +38,29 @@ namespace QUAN_LY_GIAO_VIEN
             }
         }
 
-        // Đóng và ngắt kết nối với CSDL
+        // ?�ng v� ng?t k?t n?i v?i CSDL
         public static void DisConnection()
         {
-            // Đóng kết nối
+            // ?�ng k?t n?i
             conn.Close();
-            // Ngắt kết nối
+            // Ng?t k?t n?i
             conn.Dispose();
             conn = null;
         }
 
-        // Tạo bảng để lưu CSDL
+        // T?o b?ng ?? l?u CSDL
         public static DataTable getDataTable(string sql)
         {
-            // Khởi tạo 1 SqlCommand để trỏ tới dữ liệu trong CSDL
+            // Kh?i t?o 1 SqlCommand ?? tr? t?i d? li?u trong CSDL
             cmd = new SqlCommand(sql, conn);
-            // Khởi tạo 1 SqlDataAdapter để lưu dữ liệu từ CSDL
+            // Kh?i t?o 1 SqlDataAdapter ?? l?u d? li?u t? CSDL
             da = new SqlDataAdapter();
             da.SelectCommand = cmd;
 
-            // Tạo 1 DataTable để hiển thị dữ liệu
+            // T?o 1 DataTable ?? hi?n th? d? li?u
             DataTable table = new DataTable();
 
-            // Đổ dữ liệu lên bảng
+            // ?? d? li?u l�n b?ng
             da.Fill(table);
 
             da.Dispose();
@@ -69,11 +69,11 @@ namespace QUAN_LY_GIAO_VIEN
             return table;
         }
 
-        // Tạo hàm Excute  để có thể thao tác với CSDL
+        // T?o h�m Excute  ?? c� th? thao t�c v?i CSDL
         public static void Excute(string sql)
         {
             cmd = new SqlCommand(sql, conn);
-            // Gọi hàm ExecuteNonQuery để có thể thực hiện các thao tác Insert, Delete, Update cho DataBase 
+            // G?i h�m ExecuteNonQuery ?? c� th? th?c hi?n c�c thao t�c Insert, Delete, Update cho DataBase 
             cmd.ExecuteNonQuery();
         }
     }
