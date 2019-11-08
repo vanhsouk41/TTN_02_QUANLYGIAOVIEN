@@ -22,7 +22,164 @@ namespace QUAN_LY_GIAO_VIEN
             InitializeComponent();
         }
 
-      
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 trangchu = new Form1();
+            trangchu.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            DialogResult dr = MessageBox.Show("Bạn thực sự muốn thoát?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dr == DialogResult.Yes)
+            {
+                Environment.Exit(0);
+            }
+
+        }
+
+        private void Data_form_Load(object sender, EventArgs e)
+        {
+            HOATDONGNGHIENCUU hdnc = new HOATDONGNGHIENCUU();
+            hdnc.load_BBKH();
+            dataGridView1.DataSource = hdnc.myDisplayDataTable;
+            dataGridView1.AutoResizeColumns();
+        }
+
+        private void tabPage9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+        private void QL_dulieu_selected(object sender, EventArgs e)
+        {
+            if (QL_dulieu.SelectedIndex == 0)
+            {
+                HOATDONGNGHIENCUU hdnc = new HOATDONGNGHIENCUU();
+                hdnc.load_BBKH();
+                dataGridView1.DataSource = hdnc.myDisplayDataTable;
+                dataGridView1.AutoResizeColumns();
+            }
+
+            ///PHÁT VIẾT
+            if (QL_dulieu.SelectedIndex == 1)
+            {
+                load_data_LHP();
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            HOATDONGNGHIENCUU hdnc = new HOATDONGNGHIENCUU();
+            button3.Enabled = true;
+            button5.Enabled = false;
+            button6.Enabled = false;
+            button7.Enabled = true;
+            button8.Enabled = true;
+            textBox5.Text = hdnc.AutoGenerateMaBBKH();
+            textBox5.Enabled = false;
+            textBox6.Text = "";
+            textBox12.Text = "";
+            textBox13.Text = "";
+            textBox6.Enabled = true;
+            comboBox2.Enabled = true;
+            dateTimePicker1.Enabled = true;
+            textBox13.Enabled = true;
+            textBox12.Enabled = true;
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            button3.Enabled = false;
+            button5.Enabled = true;
+            button6.Enabled = false;
+            button7.Enabled = true;
+            button8.Enabled = true;
+            textBox5.ReadOnly = true;
+            textBox6.Enabled = true;
+            comboBox2.Enabled = true;
+            dateTimePicker1.Enabled = true;
+            textBox13.Enabled = true;
+            textBox12.Enabled = true;
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            HOATDONGNGHIENCUU hdnc = new HOATDONGNGHIENCUU();
+            string MaBB = textBox5.Text;
+            string TenBB = textBox6.Text;
+            string LoaiBB = "";
+            DateTime NgayDang = dateTimePicker1.Value;
+            string TapChi = textBox13.Text;
+            string Soluongtacgia = textBox12.Text;
+
+            if (comboBox2.SelectedIndex == 0)
+            {
+                LoaiBB = "BBKH1";
+            }
+            if (comboBox2.SelectedIndex == 1)
+            {
+                LoaiBB = "BBKH2";
+            }
+            if (comboBox2.SelectedIndex == 2)
+            {
+                LoaiBB = "BBKH3";
+            }
+            if (comboBox2.SelectedIndex == 3)
+            {
+                LoaiBB = "BBKH4";
+            }
+
+            if (button3.Enabled == true)
+            {
+                hdnc.Insert_BBKH(MaBB, TenBB, LoaiBB, NgayDang, TapChi, Soluongtacgia);
+                MessageBox.Show("Success!", "Thông báo", MessageBoxButtons.OK);
+            }
+
+            if (button5.Enabled == true)
+            {
+
+                hdnc.Update_BBKH(MaBB, TenBB, LoaiBB, NgayDang, TapChi, Soluongtacgia);
+                MessageBox.Show("Success!", "Thông báo", MessageBoxButtons.OK);
+            }
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            textBox5.Text = "";
+            textBox6.Text = "";
+            textBox13.Text = "";
+            textBox12.Text = "";
+            textBox5.Enabled = true;
+            textBox5.ReadOnly = false;
+            button3.Enabled = true;
+            button5.Enabled = true;
+            button6.Enabled = true;
+            button7.Enabled = true;
+            button8.Enabled = true;
+        }
+        // Nhấn chọn In excel
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Export.ExportFile("DANH SÁCH BÀI BÁO KHOA HỌC", dataGridView1);
+        }
+        // Nhấn chọn 1 dòng
+        private void row_selected(object sender, DataGridViewCellEventArgs e)
+        {
+            textBox5.Text = dataGridView1.CurrentRow.Cells["MaBB"].Value.ToString();
+            textBox6.Text = dataGridView1.CurrentRow.Cells["TenBB"].Value.ToString();
+            comboBox2.DisplayMember = dataGridView1.CurrentRow.Cells["LoaiBB"].Value.ToString();
+            textBox13.Text = dataGridView1.CurrentRow.Cells["TapChi"].Value.ToString();
+            textBox12.Text = dataGridView1.CurrentRow.Cells["Soluongtacgia"].Value.ToString();
+            textBox5.Enabled = false;
+            textBox6.Enabled = false;
+            comboBox2.Enabled = false;
+            textBox13.Enabled = false;
+            textBox12.Enabled = false;
+            dateTimePicker1.Enabled = false;
+        }
         // Xóa
         private void button6_Click(object sender, EventArgs e)
         {

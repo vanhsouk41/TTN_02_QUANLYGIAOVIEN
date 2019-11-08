@@ -1,4 +1,4 @@
-
+﻿
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -42,14 +42,14 @@ namespace QUAN_LY_GIAO_VIEN
         public void tainghiencuukhoahoc(string type1, string type, string value, string namhoc)
         {
             SqlCommand taiNCKH = conn.CreateCommand();
-            if (type1 == "B�i b�o khoa h?c")
+            if (type1 == "Bài báo khoa học")
             {
                 taiNCKH.CommandText = "SELECT * FROM taiNCKH_BBKH(@type, @value, @namhoc)";
                 taiNCKH.Parameters.Add(new SqlParameter("@type", SqlDbType.NVarChar)).Value = type;
                 taiNCKH.Parameters.Add(new SqlParameter("@value", SqlDbType.NVarChar)).Value = value;
                 taiNCKH.Parameters.Add(new SqlParameter("@namhoc", SqlDbType.NVarChar)).Value = namhoc;
             }
-            else if (type1 == "?? t�i nghi�n c?u")
+            else if (type1 == "Đề tài nghiên cứu")
             {
                 taiNCKH.CommandText = "SELECT * FROM taiNCKH_DTNC(@type, @value, @namhoc)";
                 taiNCKH.Parameters.Add(new SqlParameter("@type", SqlDbType.NVarChar)).Value = type;
@@ -57,7 +57,7 @@ namespace QUAN_LY_GIAO_VIEN
                 taiNCKH.Parameters.Add(new SqlParameter("@namhoc", SqlDbType.NVarChar)).Value = namhoc;
             }
                 
-            else if (type1 == "S�ch")
+            else if (type1 == "Sách")
             {
                 taiNCKH.CommandText = "SELECT * FROM taiNCKH_SACH(@type, @value, @namhoc)";
                 taiNCKH.Parameters.Add(new SqlParameter("@type", SqlDbType.NVarChar)).Value = type;
@@ -163,9 +163,5 @@ namespace QUAN_LY_GIAO_VIEN
             myDisplayDataTable = new DataTable();
             myDisplayDataTable = myDataSet.Tables["DISPLAY"];
         }
-
-
-
-
     }
 }
