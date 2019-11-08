@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace TTN_02_QUANLYGIAOVIEN.Properties
+namespace QUAN_LY_GIAO_VIEN.Properties
 {
 
 
