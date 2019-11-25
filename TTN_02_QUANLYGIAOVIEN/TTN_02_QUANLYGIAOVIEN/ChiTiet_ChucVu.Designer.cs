@@ -33,12 +33,12 @@
             this.lbHienTai_CV = new System.Windows.Forms.Label();
             this.lbLichSu_CV = new System.Windows.Forms.Label();
             this.dataGridHienTai_CV = new System.Windows.Forms.DataGridView();
+            this.dataGridLichSu_CV = new System.Windows.Forms.DataGridView();
             this.MaGV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HoTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ChucVu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TG_BatDau = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DonVi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridLichSu_CV = new System.Windows.Forms.DataGridView();
             this._MaGV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this._HoTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this._ChucVu = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -102,8 +102,24 @@
             this.DonVi});
             this.dataGridHienTai_CV.Location = new System.Drawing.Point(12, 117);
             this.dataGridHienTai_CV.Name = "dataGridHienTai_CV";
-            this.dataGridHienTai_CV.Size = new System.Drawing.Size(989, 116);
+            this.dataGridHienTai_CV.Size = new System.Drawing.Size(1001, 116);
             this.dataGridHienTai_CV.TabIndex = 4;
+            // 
+            // dataGridLichSu_CV
+            // 
+            this.dataGridLichSu_CV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridLichSu_CV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridLichSu_CV.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this._MaGV,
+            this._HoTen,
+            this._ChucVu,
+            this._TG_BatDau,
+            this._TG_KetThuc,
+            this._DonVi});
+            this.dataGridLichSu_CV.Location = new System.Drawing.Point(12, 298);
+            this.dataGridLichSu_CV.Name = "dataGridLichSu_CV";
+            this.dataGridLichSu_CV.Size = new System.Drawing.Size(1001, 192);
+            this.dataGridLichSu_CV.TabIndex = 5;
             // 
             // MaGV
             // 
@@ -134,22 +150,6 @@
             this.DonVi.DataPropertyName = "DonVi";
             this.DonVi.HeaderText = "Đơn vị bổ nhiệm";
             this.DonVi.Name = "DonVi";
-            // 
-            // dataGridLichSu_CV
-            // 
-            this.dataGridLichSu_CV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridLichSu_CV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridLichSu_CV.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this._MaGV,
-            this._HoTen,
-            this._ChucVu,
-            this._TG_BatDau,
-            this._TG_KetThuc,
-            this._DonVi});
-            this.dataGridLichSu_CV.Location = new System.Drawing.Point(12, 298);
-            this.dataGridLichSu_CV.Name = "dataGridLichSu_CV";
-            this.dataGridLichSu_CV.Size = new System.Drawing.Size(989, 192);
-            this.dataGridLichSu_CV.TabIndex = 5;
             // 
             // _MaGV
             // 

@@ -1,4 +1,4 @@
-namespace QUAN_LY_GIAO_VIEN
+﻿namespace QUAN_LY_GIAO_VIEN
 {
     partial class TaiGV
     {
