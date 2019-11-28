@@ -9,6 +9,6 @@ namespace QUAN_LY_GIAO_VIEN
     class ConnectionString
     {
         // COnnect string
-        public static string connectionString = @"Data Source=.;Initial Catalog=QUAN_LY_GIAO_VIEN;Integrated Security=True";
+        public static string connectionString = @"Data Source=DESKTOP-2LM6C8U\SQLSERVER;Initial Catalog=QUAN_LY_GIAO_VIEN;Integrated Security=True";
     }
 }
