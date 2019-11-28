@@ -56,7 +56,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label3.Location = new System.Drawing.Point(431, 380);
+            this.label3.Location = new System.Drawing.Point(449, 380);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(376, 36);
             this.label3.TabIndex = 6;
@@ -67,7 +67,7 @@
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.AutoSize = true;
             this.button1.Image = global::QUAN_LY_GIAO_VIEN.Properties.Resources.images__1_;
-            this.button1.Location = new System.Drawing.Point(514, 181);
+            this.button1.Location = new System.Drawing.Point(532, 181);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(199, 182);
             this.button1.TabIndex = 4;
@@ -93,7 +93,7 @@
             this.pictureBox1.Image = global::QUAN_LY_GIAO_VIEN.Properties.Resources.HVKTQS2;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(818, 115);
+            this.pictureBox1.Size = new System.Drawing.Size(836, 115);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -119,7 +119,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ClientSize = new System.Drawing.Size(818, 450);
+            this.ClientSize = new System.Drawing.Size(836, 450);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
