@@ -26,7 +26,7 @@ namespace QUAN_LY_GIAO_VIEN
         // Phần mở kết nối tới CSDL
         public static void OpenConnection()
         {
-            string sql = @"Server = DESKTOP-2LM6C8U\SQLSERVER; Database = QUAN_LY_GIAO_VIEN; Integrated Security = True;";
+            string sql = @"Server = (local); Database = QUAN_LY_GIAO_VIEN; Integrated Security = True;";
             try
             { // Mở kết nối tới CSDL
                 conn = new SqlConnection(sql);

@@ -11,7 +11,7 @@ namespace QUAN_LY_GIAO_VIEN
 {
     class HOATDONGNGHIENCUU
     {
-        public string connString = @"Data Source =DESKTOP-2LM6C8U\SQLSERVER; Initial Catalog = QUAN_LY_GIAO_VIEN; Integrated Security = True";
+        public string connString = @"Data Source =.; Initial Catalog = QUAN_LY_GIAO_VIEN; Integrated Security = True";
         SqlConnection conn = new SqlConnection();
         SqlDataAdapter sda = new SqlDataAdapter();
         DataSet myDataSet = new DataSet();
